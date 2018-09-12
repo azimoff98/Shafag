@@ -4,11 +4,12 @@ package az.shafag.testapp.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "shafag_users")
-public class Users {
+@Table(name = "owners")
+public class Owner {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,22 +19,21 @@ public class Users {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "username")
-    private String username;
-
     @Column(name = "email")
     private String email;
 
     @Column(name = "is_active")
     private Integer isActive;
 
-    @Column(name = "password")
-    private String password;
+    @Column(name = "phone_number")
+    private String phoneNumber;
 
-    @Column(name = "role_id")
-    @OneToOne(optional = false)
-    @JoinColumn(name = "role_id", unique = true, nullable = false, updatable = false)
-    private Long role_id;
+    @Column(name = "phone_number1")
+    private String phoneNumber1;
+
+
+    @OneToMany(fetch = FetchType.EAGER, orphanRemoval = true, mappedBy = "owner_id")
+    private Set<Advertisement> adds;
 
 
 

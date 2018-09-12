@@ -1,7 +1,6 @@
 package az.shafag.testapp.model;
 
 
-import javafx.beans.NamedArg;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -13,6 +12,7 @@ public class Currency {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "name" )
