@@ -4,10 +4,11 @@ package az.shafag.testapp.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @Entity
-@Table(name="cities")
+@Table(name="cities",schema = "shafag")
 public class City {
 
 
@@ -22,5 +23,8 @@ public class City {
     private String label;
     @Column(name = "is_active")
     private Integer isActive;
+
+    @OneToMany(mappedBy = "city")
+    private Set<Advertisement> advertisements;
 
 }

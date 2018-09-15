@@ -8,7 +8,7 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "advertisement")
+@Table(name = "advertisement", schema = "shafag")
 public class Advertisement {
 
 
@@ -17,17 +17,22 @@ public class Advertisement {
     @Column(name = "id")
     private Long id;
 
-    @Column(name="user_id")
-    private Long applier_id;
+    @ManyToOne
+    @JoinColumn(name = "applier_id")
+    private Users user;
+
+    @OneToOne
+    @JoinColumn(name = "vehicle_id")
+    private Vehicle vehicle;
 
 
-    private Long vehicle_id;
+    @ManyToOne
+    @JoinColumn(name = "city_id")
+    private City city;
 
-    @Column(name = "city_id")
-    private Long city_id;
-
-    @Column(name = "currency_id")
-    private Long currency_id;
+    @ManyToOne
+    @JoinColumn(name = "currency_id")
+    private Currency currency;
 
     @Column(name = "date")
     private Date date;
@@ -53,11 +58,10 @@ public class Advertisement {
     @Column(name = "is_active")
     private Integer isActive;
 
-    @Column(name = "owner_id")
     @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "owner_id", nullable = false)
-    private Long owner_id;
+    private Owner owner;
 
 
 

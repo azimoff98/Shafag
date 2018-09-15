@@ -2,13 +2,15 @@ package az.shafag.testapp.model;
 
 
 import lombok.Data;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "brands")
+@Table(name = "brands",schema = "shafag")
 public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,7 +26,8 @@ public class Brand {
     @Column(name = "is_active")
     private Integer isActive;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "brand_id")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "brand")
+    @Fetch(FetchMode.JOIN)
     private Set<Model> models;
 
 }

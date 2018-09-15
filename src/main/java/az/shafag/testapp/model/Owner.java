@@ -8,7 +8,7 @@ import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "owners")
+@Table(name = "owners",schema = "shafag")
 public class Owner {
 
     @Id
@@ -32,7 +32,7 @@ public class Owner {
     private String phoneNumber1;
 
 
-    @OneToMany(fetch = FetchType.EAGER, orphanRemoval = true, mappedBy = "owner_id")
+    @OneToMany(fetch = FetchType.EAGER, orphanRemoval = true, mappedBy = "owner")
     private Set<Advertisement> adds;
 
 

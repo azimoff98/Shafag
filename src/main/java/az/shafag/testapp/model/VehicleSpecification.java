@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "vehicle_specs")
+@Table(name = "vehicle_specs",schema = "shafag")
 public class VehicleSpecification {
 
 

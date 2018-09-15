@@ -3,10 +3,11 @@ package az.shafag.testapp.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "differential")
+@Table(name = "differential",schema = "shafag")
 public class Differential {
 
     @Id
@@ -22,4 +23,7 @@ public class Differential {
 
     @Column(name = "is_active")
     private Integer isActive;
+
+    @OneToMany(mappedBy = "differential")
+    private Set<Vehicle> vehicles;
 }

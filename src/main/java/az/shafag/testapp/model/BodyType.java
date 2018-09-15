@@ -3,10 +3,11 @@ package az.shafag.testapp.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "body_type")
+@Table(name = "body_type",schema = "shafag")
 public class BodyType {
 
     @Id
@@ -21,5 +22,8 @@ public class BodyType {
 
     @Column(name = "is_active")
     private Integer isActive;
+
+    @OneToMany(mappedBy = "bodyType")
+    private Set<Vehicle> vehicles;
 
 }

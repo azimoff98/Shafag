@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "shafag_users")
+@Table(name = "shafag_users",schema = "shafag")
 public class Users {
 
     @Id
@@ -30,10 +30,9 @@ public class Users {
     @Column(name = "password")
     private String password;
 
-    @Column(name = "role_id")
-    @OneToOne(optional = false)
+    @ManyToOne(optional = false)
     @JoinColumn(name = "role_id", unique = true, nullable = false, updatable = false)
-    private Long role_id;
+    private Role role;
 
 
 

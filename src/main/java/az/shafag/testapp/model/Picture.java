@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "pictures")
+@Table(name = "pictures",schema = "shafag")
 public class Picture {
 
     @Id
@@ -21,10 +21,9 @@ public class Picture {
     @Column(name = "is_active")
     private Integer isActive;
 
-    @Column(name = "vehicle_id")
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "vehicle_id")
-    private Long vehicleId;
+    private Vehicle vehicle;
 
 
 }

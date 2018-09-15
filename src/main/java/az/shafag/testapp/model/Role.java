@@ -4,10 +4,11 @@ package az.shafag.testapp.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "roles")
+@Table(name = "roles",schema = "shafag")
 public class Role {
 
     @Id
@@ -19,7 +20,6 @@ public class Role {
     private String label;
 
 
-    @Column(name = "name")
-    @OneToOne(optional = false, mappedBy = "role_id")
-    private String name;
+    @OneToMany(mappedBy = "role")
+    private Set<Users> users;
 }

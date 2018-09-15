@@ -3,10 +3,11 @@ package az.shafag.testapp.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "fuel_type")
+@Table(name = "fuel_type",schema = "shafag")
 public class FuelType {
 
 
@@ -23,5 +24,8 @@ public class FuelType {
 
     @Column(name = "is_active")
     private Integer isActive;
+
+    @OneToMany(mappedBy = "fuelType")
+    private Set<Vehicle> vehicles;
 
 }

@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "models")
+@Table(name = "models",schema = "shafag")
 public class Model {
 
 
@@ -21,9 +21,12 @@ public class Model {
     @Column(name = "label")
     private String label;
 
-    @Column(name = "brand_id")
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "brand_id")
-    private Long brandId;
+    private Brand brand;
+
+    @Column(name = "is_active")
+    private Integer isActive;
+
 
 }

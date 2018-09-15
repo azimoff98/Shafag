@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "vehicle")
+@Table(name = "vehicle",schema = "shafag")
 public class Vehicle {
 
     @Id
@@ -14,11 +14,13 @@ public class Vehicle {
     @Column(name = "id")
     private Long Id;
 
-    @Column(name = "brand_id")
-    private Long brand_id;
+    @ManyToOne
+    @JoinColumn(name = "brand_id")
+    private Brand brand;
 
-    @Column(name = "model_id")
-    private Long model_id;
+    @ManyToOne
+    @JoinColumn(name = "model_id")
+    private Model model;
 
     @Column(name = "year")
     private Integer year;
@@ -26,21 +28,24 @@ public class Vehicle {
     @Column(name = "millage")
     private Integer millage;
 
-    @Column(name = "gearbox_id")
-    //Todo: Relation
-    private Long gearBoxId;
+    @ManyToOne
+    @JoinColumn(name = "gearbox_id")
+    private GearBox gearBox;
 
-    @Column(name = "color_id")
-    //Todo: Relation
-    private Long colorId;
+    @ManyToOne
+    @JoinColumn(name = "differential_id")
+    private Differential differential;
+
+    @ManyToOne
+    @JoinColumn(name = "color_id")
+    private Color color;
 
     @Column(name = "new")
-    //Todo: Relation
     private Integer isNew;
 
-    @Column(name = "fuel_type_id")
-    //Todo: Relation
-    private Long fuelTypeId;
+    @ManyToOne
+    @JoinColumn(name = "fuel_type_id")
+    private FuelType fuelType;
 
     @Column(name = "horse_power")
     private Integer horsePower;
@@ -48,10 +53,9 @@ public class Vehicle {
     @Column(name = "engine")
     private Float engine;
 
-    @Column(name = "body_type_id")
-    //Todo: Relation
-    private Long bodyTypeId;
-
+    @ManyToOne
+    @JoinColumn(name = "body_type_id")
+    private BodyType bodyType;
 
 
 

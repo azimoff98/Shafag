@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "currency")
+@Table(name = "currency",schema = "shafag")
 public class Currency {
 
     @Id
@@ -23,4 +23,5 @@ public class Currency {
 
     @Column(name = "is_active")
     private Integer isActive;
+
 }
