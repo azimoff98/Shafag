@@ -24,4 +24,44 @@ public class Currency {
     @Column(name = "is_active")
     private Integer isActive;
 
+    public Currency() {
+    }
+
+    public Currency(String name, String label, Integer isActive) {
+        this.name = name;
+        this.label = label;
+        this.isActive = isActive;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
+    public Integer getIsActive() {
+        return isActive;
+    }
+
+    public void setIsActive(Integer isActive) {
+        this.isActive = isActive;
+    }
 }

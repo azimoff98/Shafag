@@ -28,5 +28,53 @@ public class Model {
     @Column(name = "is_active")
     private Integer isActive;
 
+    public Model() {
+    }
 
+    public Model(String name, String label, Brand brand, Integer isActive) {
+        this.name = name;
+        this.label = label;
+        this.brand = brand;
+        this.isActive = isActive;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
+    public Brand getBrand() {
+        return brand;
+    }
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
+    }
+
+    public Integer getIsActive() {
+        return isActive;
+    }
+
+    public void setIsActive(Integer isActive) {
+        this.isActive = isActive;
+    }
 }

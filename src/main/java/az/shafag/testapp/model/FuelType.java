@@ -28,4 +28,53 @@ public class FuelType {
     @OneToMany(mappedBy = "fuelType")
     private Set<Vehicle> vehicles;
 
+    public FuelType() {
+    }
+
+    public FuelType(String name, String label, Integer isActive, Set<Vehicle> vehicles) {
+        this.name = name;
+        this.label = label;
+        this.isActive = isActive;
+        this.vehicles = vehicles;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
+    public Integer getIsActive() {
+        return isActive;
+    }
+
+    public void setIsActive(Integer isActive) {
+        this.isActive = isActive;
+    }
+
+    public Set<Vehicle> getVehicles() {
+        return vehicles;
+    }
+
+    public void setVehicles(Set<Vehicle> vehicles) {
+        this.vehicles = vehicles;
+    }
 }

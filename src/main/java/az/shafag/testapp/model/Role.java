@@ -22,4 +22,36 @@ public class Role {
 
     @OneToMany(mappedBy = "role")
     private Set<Users> users;
+
+    public Role() {
+    }
+
+    public Role(String label, Set<Users> users) {
+        this.label = label;
+        this.users = users;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
+    public Set<Users> getUsers() {
+        return users;
+    }
+
+    public void setUsers(Set<Users> users) {
+        this.users = users;
+    }
 }
