@@ -17,6 +17,9 @@ public class Advertisement {
     @Column(name = "id")
     private Long id;
 
+
+    private String key;
+
     @ManyToOne
     @JoinColumn(name = "applier_id")
     private Users user;
@@ -62,6 +65,7 @@ public class Advertisement {
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "owner_id", nullable = false)
     private Owner owner;
+
 
 
 

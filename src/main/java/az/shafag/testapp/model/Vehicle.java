@@ -3,6 +3,7 @@ package az.shafag.testapp.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @Entity
@@ -56,6 +57,14 @@ public class Vehicle {
     @ManyToOne
     @JoinColumn(name = "body_type_id")
     private BodyType bodyType;
+
+    @ManyToMany
+    @JoinTable(
+            name = "vehicle_specs",
+            joinColumns = {@JoinColumn(name = "vehicle_id")},
+            inverseJoinColumns = {@JoinColumn(name = "specs_id")}
+    )
+    private Set<Specification> specifications;
 
 
 

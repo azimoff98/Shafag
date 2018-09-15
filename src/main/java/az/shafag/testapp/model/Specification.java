@@ -3,6 +3,7 @@ package az.shafag.testapp.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @Entity
@@ -22,5 +23,8 @@ public class Specification {
 
     @Column(name = "is_active")
     private Integer isActive;
+
+    @ManyToMany(mappedBy = "specifications")
+    private Set<Vehicle> vehicles;
 
 }
