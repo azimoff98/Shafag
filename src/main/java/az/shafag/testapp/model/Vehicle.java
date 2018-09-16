@@ -45,7 +45,7 @@ public class Vehicle {
     private Color color;
 
     @Column(name = "new")
-    private Integer isNew;
+    private Long isNew;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "fuel_type_id")
@@ -81,7 +81,7 @@ public class Vehicle {
                    GearBox gearBox,
                    Differential differential,
                    Color color,
-                   Integer isNew,
+                   Long isNew,
                    FuelType fuelType,
                    Integer horsePower,
                    Float engine,
@@ -166,11 +166,11 @@ public class Vehicle {
         this.color = color;
     }
 
-    public Integer getIsNew() {
+    public Long getIsNew() {
         return isNew;
     }
 
-    public void setIsNew(Integer isNew) {
+    public void setIsNew(Long isNew) {
         this.isNew = isNew;
     }
 
