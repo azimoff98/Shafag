@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< Updated upstream
   <component name="ChangeListManager">
     <list default="true" id="221ee29f-8d5a-48da-9be5-014948b8ab52" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,15 +41,18 @@
       </MavenImportingSettings>
     </option>
   </component>
+=======
+>>>>>>> Stashed changes
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
+    <option name="x" value="467" />
+    <option name="y" value="23" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -82,21 +86,13 @@
       </pane>
     </panes>
   </component>
+=======
+>>>>>>> Stashed changes
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -141,6 +137,7 @@
       <listeners />
     </configuration>
   </component>
+<<<<<<< Updated upstream
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="221ee29f-8d5a-48da-9be5-014948b8ab52" name="Default" comment="" />
@@ -199,4 +196,6 @@
       </provider>
     </entry>
   </component>
+=======
+>>>>>>> Stashed changes
 </project>
