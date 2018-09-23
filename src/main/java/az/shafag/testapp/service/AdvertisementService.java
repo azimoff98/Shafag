@@ -10,7 +10,6 @@ public class AdvertisementService extends AbstractService {
     @ServiceMethod
     public void save(){
 
-
     }
 
 }
