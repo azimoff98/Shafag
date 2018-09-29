@@ -6,9 +6,8 @@ import lombok.Data;
 import javax.persistence.*;
 import java.util.Set;
 
-@Data
 @Entity
-@Table(name = "roles",schema = "shafag")
+@Table(name = "roles")
 public class Role {
 
     @Id

@@ -5,9 +5,9 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Data
+
 @Entity
-@Table(name = "currency",schema = "shafag")
+@Table(name = "currency")
 public class Currency {
 
     @Id

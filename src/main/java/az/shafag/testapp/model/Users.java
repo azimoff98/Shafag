@@ -5,9 +5,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Data
 @Entity
-@Table(name = "shafag_users",schema = "shafag")
+@Table(name = "shafag_users")
 public class Users {
 
 

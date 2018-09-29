@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "differential",schema = "shafag")
+@Table(name = "differential")
 public class Differential {
 
     @Id

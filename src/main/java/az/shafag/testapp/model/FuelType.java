@@ -5,9 +5,9 @@ import lombok.Data;
 import javax.persistence.*;
 import java.util.Set;
 
-@Data
+
 @Entity
-@Table(name = "fuel_type",schema = "shafag")
+@Table(name = "fuel_type")
 public class FuelType {
 
 

@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "body_type",schema = "shafag")
+@Table(name = "body_type")
 public class BodyType {
 
     @Id

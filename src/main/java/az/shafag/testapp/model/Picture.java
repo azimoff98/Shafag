@@ -5,9 +5,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Data
 @Entity
-@Table(name = "pictures",schema = "shafag")
+@Table(name = "pictures")
 public class Picture {
 
     @Id

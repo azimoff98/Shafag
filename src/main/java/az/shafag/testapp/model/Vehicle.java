@@ -1,15 +1,13 @@
 package az.shafag.testapp.model;
 
-import lombok.Data;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import java.util.Set;
 
-@Data
 @Entity
-@Table(name = "vehicle",schema = "shafag")
+@Table(name = "vehicle")
 public class Vehicle {
 
     @Id

@@ -7,7 +7,7 @@ import java.util.Set;
 
 
 @Entity
-@Table(name="cities",schema = "shafag")
+@Table(name="cities")
 public class City {
 
 

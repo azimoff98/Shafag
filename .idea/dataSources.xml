@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="postgres@localhost" uuid="90faa315-2914-4b2f-b395-be50d38571ce">
+    <data-source source="LOCAL" name="step_diploma@104.199.249.121" uuid="aaf9c415-2f19-48e9-8305-1208857970f5">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+      <jdbc-url>jdbc:postgresql://104.199.249.121/step_diploma?cloudSqlInstance=effective-aria-215912:asia-east1:stepdiploma&amp;socketFactoryArg=com.google.cloud.sql.postgres.SocketFactory</jdbc-url>
     </data-source>
   </component>
 </project>
