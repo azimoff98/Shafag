@@ -11,6 +11,8 @@ public class SearchDTO {
     private IdDTO isNew;
 
 
+
+
 }
 
 
