@@ -53,7 +53,7 @@ public class Vehicle {
     private Integer horsePower;
 
     @Column(name = "engine")
-    private Float engine;
+    private Engine engine;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "body_type_id")
@@ -82,7 +82,7 @@ public class Vehicle {
                    Long isNew,
                    FuelType fuelType,
                    Integer horsePower,
-                   Float engine,
+                   Engine engine,
                    BodyType bodyType,
                    Set<Specification> specifications) {
         this.brand = brand;
@@ -188,11 +188,11 @@ public class Vehicle {
         this.horsePower = horsePower;
     }
 
-    public Float getEngine() {
+    public Engine getEngine() {
         return engine;
     }
 
-    public void setEngine(Float engine) {
+    public void setEngine(Engine engine) {
         this.engine = engine;
     }
 
