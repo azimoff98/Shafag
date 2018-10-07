@@ -1,6 +1,7 @@
 package az.shafag.testapp.dto;
 
 import az.shafag.testapp.model.Brand;
+import az.shafag.testapp.model.Picture;
 
 import java.util.Set;
 
@@ -20,6 +21,7 @@ public class VehicleDTO {
     private FuelTypeDTO fuelType;
     private BodyTypeDTO bodyType;
     private Set<SpecsDTO> specs;
+    private Set<PictureDTO> pictures;
 
     public Integer getMillegeFrom() {
         return millegeFrom;
@@ -131,5 +133,13 @@ public class VehicleDTO {
 
     public void setSpecs(Set<SpecsDTO> specs) {
         this.specs = specs;
+    }
+
+    public Set<PictureDTO> getPictures() {
+        return pictures;
+    }
+
+    public void setPictures(Set<PictureDTO> pictures) {
+        this.pictures = pictures;
     }
 }
