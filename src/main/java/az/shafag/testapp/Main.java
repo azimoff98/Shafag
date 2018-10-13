@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("az.shafag.testapp.repository.mapper")
+@MapperScan("az.shafag.testapp.dao.mapper")
 public class Main {
 
     public static void main(String[] args) {

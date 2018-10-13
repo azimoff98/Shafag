@@ -1,6 +1,5 @@
-package az.shafag.testapp.repository.mapper;
+package az.shafag.testapp.dao.mapper;
 
-import az.shafag.testapp.dto.FuelTypeDTO;
 import az.shafag.testapp.dto.ModelDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;

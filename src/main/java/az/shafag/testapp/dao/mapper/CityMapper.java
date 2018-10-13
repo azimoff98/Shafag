@@ -1,4 +1,4 @@
-package az.shafag.testapp.repository.mapper;
+package az.shafag.testapp.dao.mapper;
 
 import az.shafag.testapp.dto.CityDTO;
 import org.apache.ibatis.annotations.Mapper;

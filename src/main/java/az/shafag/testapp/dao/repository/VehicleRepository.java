@@ -1,4 +1,4 @@
-package az.shafag.testapp.repository;
+package az.shafag.testapp.dao.repository;
 
 import az.shafag.testapp.model.Vehicle;
 import org.springframework.data.repository.CrudRepository;

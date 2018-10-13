@@ -1,4 +1,4 @@
-package az.shafag.testapp.repository.mapper;
+package az.shafag.testapp.dao.mapper;
 
 import java.util.List;
 
