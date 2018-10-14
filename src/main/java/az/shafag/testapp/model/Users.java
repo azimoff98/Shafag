@@ -4,6 +4,7 @@ package az.shafag.testapp.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "shafag_users")
@@ -36,18 +37,28 @@ public class Users {
     @JoinColumn(name = "role_id", unique = true, nullable = false, updatable = false)
     private Role role;
 
+    @OneToMany(mappedBy = "applier")
+    private Set<Advertisement> adds;
 
     public Users() {
     }
 
-    public Users(String name, String username, String email, Integer isActive, String password, Role role) {
+    public Users(String name,
+                 String username,
+                 String email,
+                 Integer isActive,
+                 String password,
+                 Role role,
+                 Set<Advertisement> adds) {
         this.name = name;
         this.username = username;
         this.email = email;
         this.isActive = isActive;
         this.password = password;
         this.role = role;
+        this.adds = adds;
     }
+
 
     public Long getId() {
         return id;
@@ -105,7 +116,11 @@ public class Users {
         this.role = role;
     }
 
+    public Set<Advertisement> getAdds() {
+        return adds;
+    }
 
-
-
+    public void setAdds(Set<Advertisement> adds) {
+        this.adds = adds;
+    }
 }

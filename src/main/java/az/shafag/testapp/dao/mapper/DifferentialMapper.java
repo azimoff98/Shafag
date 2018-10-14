@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+import java.util.Set;
 
 @Mapper
 public interface DifferentialMapper {
@@ -13,9 +14,9 @@ public interface DifferentialMapper {
     DiferentialDTO getById(Long id);
 
     @Select("select * from shefeq.brands")
-    List<DiferentialDTO> getAll();
+    Set<DiferentialDTO> getAll();
 
     @Select("select * from shefeq.brands where isActive = 1")
-    List<DiferentialDTO> getAllActive();
+    Set<DiferentialDTO> getAllActive();
 
 }

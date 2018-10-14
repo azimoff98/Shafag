@@ -1,6 +1,8 @@
 package az.shafag.testapp.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.google.api.services.sqladmin.model.User;
+import org.apache.ibatis.annotations.Many;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -65,6 +67,9 @@ public class Advertisement {
     @JoinColumn(name = "owner_id", nullable = false)
     private Owner owner;
 
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "applier_id", nullable = false)
+    private User applier;
 
     public Advertisement() {
     }
@@ -82,7 +87,8 @@ public class Advertisement {
                          Integer seenCount,
                          Short status,
                          Integer isActive,
-                         Owner owner) {
+                         Owner owner,
+                         User applier) {
         this.key = key;
         this.user = user;
         this.vehicle = vehicle;
@@ -97,6 +103,7 @@ public class Advertisement {
         this.status = status;
         this.isActive = isActive;
         this.owner = owner;
+        this.applier = applier;
     }
 
     public Long getId() {
@@ -217,5 +224,13 @@ public class Advertisement {
 
     public void setOwner(Owner owner) {
         this.owner = owner;
+    }
+
+    public User getApplier() {
+        return applier;
+    }
+
+    public void setApplier(User applier) {
+        this.applier = applier;
     }
 }

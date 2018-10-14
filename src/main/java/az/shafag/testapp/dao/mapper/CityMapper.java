@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+import java.util.Set;
 
 @Mapper
 public interface CityMapper {
@@ -13,10 +14,10 @@ public interface CityMapper {
     CityDTO getById(Long id);
 
     @Select("select * from shefeq.cities")
-    List<CityDTO> getAll();
+    Set<CityDTO> getAll();
 
     @Select("select * from shefeq.cities where isActive = 1")
-    List<CityDTO> getAllActive();
+    Set<CityDTO> getAllActive();
 
 
 }

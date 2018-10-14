@@ -5,5 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface FuelTypeRepository extends CrudRepository<Long, FuelType> {
+public interface FuelTypeRepository extends CrudRepository <FuelType, Long> {
+
 }

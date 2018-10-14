@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+import java.util.Set;
 
 @Mapper
 public interface BrandMapper {
@@ -14,10 +15,10 @@ public interface BrandMapper {
     BrandDTO getById(Long id);
 
     @Select("select * from shefeq.brands")
-    List<BrandDTO> getAll();
+    Set<BrandDTO> getAll();
 
     @Select("select * from shefeq.brands where isActive = 1")
-    List<BrandDTO> getAllActive();
+    Set<BrandDTO> getAllActive();
 
 
 }

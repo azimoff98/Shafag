@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+import java.util.Set;
 
 @Mapper
 public interface CurrencyMapper {
@@ -15,10 +16,10 @@ public interface CurrencyMapper {
     CurrencyDTO getById(Long id);
 
     @Select("select * from shefeq.currency")
-    List<CurrencyDTO> getAll();
+    Set<CurrencyDTO> getAll();
 
     @Select("select * from shefeq.currency where isActive = 1")
-    List<CurrencyDTO> getAllActive();
+    Set<CurrencyDTO> getAllActive();
 
 
 

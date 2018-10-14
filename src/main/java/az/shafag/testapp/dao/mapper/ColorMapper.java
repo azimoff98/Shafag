@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+import java.util.Set;
 
 @Mapper
 public interface ColorMapper {
@@ -13,7 +14,7 @@ public interface ColorMapper {
     ColorDTO getById(Long id);
 
     @Select("select * from shefeq.color")
-    List<ColorDTO> getAll();
+    Set<ColorDTO> getAll();
 
 
 }

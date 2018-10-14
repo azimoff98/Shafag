@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+import java.util.Set;
 
 @Mapper
 public interface FuelTypeMapper {
@@ -14,7 +15,7 @@ public interface FuelTypeMapper {
     @Select("select * from shefeq.fuel_type where id=#{id} and is_active=1 ")
     FuelTypeDTO getById(Long id);
     @Select("select * from shefeq.fuel_type")
-    List<FuelTypeDTO> getAll();
+    Set<FuelTypeDTO> getAll();
     @Select("select * from shefeq.fuel_type is_active=1 ")
-    List<FuelTypeDTO> getAllActive();
+    Set<FuelTypeDTO> getAllActive();
 }

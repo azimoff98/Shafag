@@ -1,11 +1,8 @@
 package az.shafag.testapp.dao.mapper;
 
 
-import az.shafag.testapp.dto.AdvertisementDTO;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import az.shafag.testapp.dto.*;
+import org.apache.ibatis.annotations.*;
 
 import java.util.Date;
 import java.util.Set;
@@ -26,9 +23,16 @@ public interface AdvertisementMapper {
             @Result(property = "price", column = "price"),
             @Result(property = "seenCount", column = "seen_count"),
             @Result(property = "status", column = "status"),
-            @Result(property = "city", column = "city_id"),
-
-
+            @Result(property = "city", column = "city_id",
+                    many = @Many(select = "az.shafag.testapp.dao.mapper.CityMapper.getById"),javaType = CityDTO.class),
+            @Result(property = "currency", column = "currency_id",
+                    many = @Many(select = "az.shafag.testapp.dao.mapper.CurrencyMapper.getById"), javaType = CurrencyDTO.class),
+            @Result(property = "owner", column = "owner_id",
+                    many = @Many(select = "az.shafag.testapp.dao.mapper.OwnerMapper.getById"), javaType = OwnerDTO.class),
+            @Result(property = "applier", column = "applier_id",
+                    many = @Many(select = "az.shafag.testapp.dao.mapper.UserMapper.getById"), javaType = UserDTO.class),
+            @Result(property = "vehicle", column = "vehicle_id",
+                    many = @Many(select = "az.shafag.testapp.dao.mapper.VehicleMapper.getById"))
         }
     )
 
@@ -41,6 +45,9 @@ public interface AdvertisementMapper {
 
     @Select("select * from advertisement where is_active=1")
     Set<AdvertisementDTO> getAllActive();
+
+    @Delete("delete * from shefeq.table where key=#{key} and is_active=1")
+    void deleteByKey(String key);
 
 
 }
