@@ -4,6 +4,7 @@ import az.shafag.testapp.dao.mapper.FuelTypeMapper;
 import az.shafag.testapp.dao.repository.FuelTypeRepository;
 import az.shafag.testapp.dto.FuelTypeDTO;
 import az.shafag.testapp.dto.SearchDTO;
+import az.shafag.testapp.exception.ShafagException;
 import az.shafag.testapp.model.FuelType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,9 +25,16 @@ public class FuelTypeService extends AbstractService<FuelTypeDTO, FuelType, Long
 
     @Override
     public void save(FuelType fuelType) {
-        if(!Objects.isNull(fuelType) && !Objects.isNull(fuelType.getId())){
-            repository.save(fuelType);
+        try{
+            if(!Objects.isNull(fuelType) && !Objects.isNull(fuelType.getId())){
+                repository.save(fuelType);
+            }else{
+                throw new ShafagException("fuel type cannot be added");
+            }
+        }catch (ShafagException e){
+            e.getMessage();
         }
+
     }
 
     @Override

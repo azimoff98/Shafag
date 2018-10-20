@@ -1,4 +1,4 @@
-package az.shafag.conf;
+package az.shafag.testapp.conf;
 
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;

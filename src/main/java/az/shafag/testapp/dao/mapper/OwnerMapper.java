@@ -1,10 +1,14 @@
 package az.shafag.testapp.dao.mapper;
 
+import az.shafag.testapp.dto.AdvertisementDTO;
 import az.shafag.testapp.dto.OwnerDTO;
+import az.shafag.testapp.model.Advertisement;
+import az.shafag.testapp.model.Owner;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+import java.util.Set;
 
 @Mapper
 public interface OwnerMapper {
@@ -13,10 +17,13 @@ public interface OwnerMapper {
     OwnerDTO getById(Long id);
 
     @Select("select * from shefeq.owners")
-    List<OwnerDTO> getAll();
+    Set<OwnerDTO> getAll();
 
     @Select("select * from shefeq.owners where isActive = 1")
-    List<OwnerDTO> getAllActive();
+    Set<OwnerDTO> getAllActive();
+
+    @Select("select * from shefeq.advertisement where owner_id=#{id}")
+    Set<AdvertisementDTO> getAllAdds(Owner owner);
 
 
 }

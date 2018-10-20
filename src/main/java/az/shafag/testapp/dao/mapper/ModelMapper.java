@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+import java.util.Set;
 
 @Mapper
 public interface ModelMapper {
@@ -12,7 +13,7 @@ public interface ModelMapper {
     @Select("select * from shefeq.models where id=#{id} and is_active=1 ")
     ModelDTO getById(Long id);
     @Select("select * from shefeq.models")
-    List<ModelDTO> getAll();
+    Set<ModelDTO> getAll();
     @Select("select * from shefeq.models is_active=1 ")
-    List<ModelDTO> getAllActive();
+    Set<ModelDTO> getAllActive();
 }

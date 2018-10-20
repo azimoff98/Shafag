@@ -5,6 +5,7 @@ import az.shafag.testapp.dao.mapper.CurrencyMapper;
 import az.shafag.testapp.dao.repository.CurrencyRepository;
 import az.shafag.testapp.dto.CurrencyDTO;
 import az.shafag.testapp.dto.SearchDTO;
+import az.shafag.testapp.exception.ShafagException;
 import az.shafag.testapp.model.Currency;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,9 +27,16 @@ public class CurrencyService extends AbstractService<CurrencyDTO, Currency, Long
 
     @Override
     public void save(Currency currency) {
-        if(!Objects.isNull(currency) && !Objects.isNull(currency.getName())){
-            repository.save(currency);
+        try{
+            if(!Objects.isNull(currency) && !Objects.isNull(currency.getName())){
+                repository.save(currency);
+            }else{
+                throw new ShafagException("currency cannot be added");
+            }
+        }catch (ShafagException e){
+            e.getMessage();
         }
+
     }
 
     @Override

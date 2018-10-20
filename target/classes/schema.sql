@@ -259,3 +259,10 @@ ALTER TABLE "vehicle_specs" ADD CONSTRAINT "vehicle_specs_fk0" FOREIGN KEY ("veh
 ALTER TABLE "vehicle_specs" ADD CONSTRAINT "vehicle_specs_fk1" FOREIGN KEY ("specs_id") REFERENCES "specs"("id");
 
 
+CREATE TABLE engine (
+  id SERIAL NOT NULL PRIMARY KEY ,
+  label VARCHAR (5) NOT NULL,
+  volume VARCHAR (5) NOT NULL
+)
+
+CREATE

@@ -4,6 +4,7 @@ import az.shafag.testapp.dao.mapper.BodyTypeMapper;
 import az.shafag.testapp.dao.repository.BodyTypeRepository;
 import az.shafag.testapp.dto.BodyTypeDTO;
 import az.shafag.testapp.dto.SearchDTO;
+import az.shafag.testapp.exception.ShafagException;
 import az.shafag.testapp.model.BodyType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,10 +28,16 @@ public class BodyTypeService extends AbstractService<BodyTypeDTO, BodyType, Long
 
     @Override
     public void save(BodyType bodyType) {
-
-        if(!Objects.isNull(bodyType) && !Objects.isNull(bodyType.getName())){
-            repository.save(bodyType);
+        try{
+            if(!Objects.isNull(bodyType) && !Objects.isNull(bodyType.getName())){
+                repository.save(bodyType);
+            }else{
+                throw new ShafagException("BodyType cannot be added");
+            }
+        }catch (ShafagException e){
+            e.getMessage();
         }
+
 
     }
 

@@ -5,11 +5,11 @@ import az.shafag.testapp.dao.mapper.VehicleMapper;
 import az.shafag.testapp.dao.repository.VehicleRepository;
 import az.shafag.testapp.dto.SearchDTO;
 import az.shafag.testapp.dto.VehicleDTO;
+import az.shafag.testapp.exception.ShafagException;
 import az.shafag.testapp.model.Vehicle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -27,9 +27,29 @@ public class VehicleService extends AbstractService<VehicleDTO,Vehicle,Long>{
 
     @Override
     public void save(Vehicle vehicle) {
-        if(!Objects.isNull(vehicle)){
-            repository.save(vehicle);
+        try{
+            if(!Objects.isNull(vehicle)
+                    && !Objects.isNull(vehicle.getBrand())
+                    && !Objects.isNull(vehicle.getModel())
+                    && !Objects.isNull(vehicle.getBodyType())
+                    && !Objects.isNull(vehicle.getColor())
+                    && !Objects.isNull(vehicle.getDifferential())
+                    && !Objects.isNull(vehicle.getEngine())
+                    && !Objects.isNull(vehicle.getFuelType())
+                    && !Objects.isNull(vehicle.getGearBox())
+                    && !Objects.isNull(vehicle.getHorsePower())
+                    && !Objects.isNull(vehicle.getIsNew())
+                    && !Objects.isNull(vehicle.getMillage())
+                    && !Objects.isNull(vehicle.getYear())
+                    ){
+                repository.save(vehicle);
+            }else {
+                throw new ShafagException("vehicle cannot be added");
+            }
+        }catch (ShafagException e){
+            e.getMessage();
         }
+
     }
 
     @Override
@@ -49,6 +69,6 @@ public class VehicleService extends AbstractService<VehicleDTO,Vehicle,Long>{
 
     @Override
     public void delete(Long id) {
-
+        repository.deleteById(id);
     }
 }

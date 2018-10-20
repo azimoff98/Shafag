@@ -1,18 +1,14 @@
 package az.shafag.testapp.service;
-
-import az.shafag.testapp.annotation.ServiceMethod;
 import az.shafag.testapp.dao.mapper.AdvertisementMapper;
 import az.shafag.testapp.dao.repository.AdvertisementRepository;
 import az.shafag.testapp.dto.AdvertisementDTO;
 import az.shafag.testapp.dto.SearchDTO;
+import az.shafag.testapp.exception.ShafagException;
 import az.shafag.testapp.model.Advertisement;
 import org.apache.commons.lang.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 import java.util.Objects;
-import java.util.Random;
 import java.util.Set;
 
 import static az.shafag.testapp.constant.ServiceName.*;
@@ -33,16 +29,23 @@ public class AdvertisementService extends AbstractService<AdvertisementDTO, Adve
 
         String key = generateKey();
         advertisement.setKey(key);
-
-        if(!Objects.isNull(advertisement)
-                && !Objects.isNull(advertisement.getPrice())
-                && !Objects.isNull(advertisement.getCity())
-                && !Objects.isNull(advertisement.getCurrency())
-                && !Objects.isNull(advertisement.getOwner())
-                && !Objects.isNull(advertisement.getUser())
-                && !Objects.isNull(advertisement.getVehicle())){
-            repository.save(advertisement);
+        try {
+            if(!Objects.isNull(advertisement)
+                    && !Objects.isNull(advertisement.getPrice())
+                    && !Objects.isNull(advertisement.getCity())
+                    && !Objects.isNull(advertisement.getCurrency())
+                    && !Objects.isNull(advertisement.getOwner())
+                    && !Objects.isNull(advertisement.getApplier())
+                    && !Objects.isNull(advertisement.getVehicle())){
+                repository.save(advertisement);
+            }
+            else {
+               throw new ShafagException("this advertisement cannot be saved");
+            }
+        }catch (ShafagException e){
+            e.getMessage();
         }
+
     }
 
     @Override
@@ -72,20 +75,20 @@ public class AdvertisementService extends AbstractService<AdvertisementDTO, Adve
             if(!Objects.isNull(key) && getById(id).getKey().equals(key)){
                 mapper.deleteByKey(key);
             }else{
-                throw new Exception("key is not matching...");
+                throw new ShafagException("key is not matching...");
             }
-        }catch (Exception e){
-            e.printStackTrace();
+        }catch (ShafagException e){
+            e.getMessage();
         }
     }
 
-    public String generateKey(){
+    private String generateKey(){
         int length = 6;
-        String key = RandomStringUtils.random(length, true, true);
-        return key;
+        return RandomStringUtils.random(length, true, true);
+
     }
 
-    
+
 
 
 }

@@ -4,6 +4,7 @@ import az.shafag.testapp.dao.mapper.BrandMapper;
 import az.shafag.testapp.dao.repository.BrandRepository;
 import az.shafag.testapp.dto.BrandDTO;
 import az.shafag.testapp.dto.SearchDTO;
+import az.shafag.testapp.exception.ShafagException;
 import az.shafag.testapp.model.Brand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,11 +26,16 @@ public class BrandService extends AbstractService<BrandDTO, Brand, Long> {
 
     @Override
     public void save(Brand brand) {
-        if(!Objects.isNull(brand) && !Objects.isNull(brand.getName())){
-            repository.save(brand);
-        }else{
-            throw new RuntimeException();
+        try{
+            if(!Objects.isNull(brand) && !Objects.isNull(brand.getName())){
+                repository.save(brand);
+            }else{
+                throw new ShafagException("Brand cannot be added");
+            }
+        }catch (ShafagException e){
+            e.getMessage();
         }
+
     }
 
     @Override

@@ -1,47 +1,60 @@
 package az.shafag.testapp.service;
 
-import az.shafag.testapp.dao.mapper.EngineMapper;
 import az.shafag.testapp.dao.mapper.GearBoxMapper;
-import az.shafag.testapp.dao.repository.EngineRepository;
+import az.shafag.testapp.dao.mapper.RoleMapper;
 import az.shafag.testapp.dao.repository.GearBoxRepository;
+import az.shafag.testapp.dao.repository.RoleRepository;
 import az.shafag.testapp.dto.GearBoxDTO;
+import az.shafag.testapp.dto.RoleDTO;
 import az.shafag.testapp.dto.SearchDTO;
+import az.shafag.testapp.exception.ShafagException;
 import az.shafag.testapp.model.GearBox;
+import az.shafag.testapp.model.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
 import java.util.Set;
 
-import static az.shafag.testapp.constant.ServiceName.*;
+import static az.shafag.testapp.constant.ServiceName.GEARBOX;
+import static az.shafag.testapp.constant.ServiceName.ROLE;
 
-@Service(GEARBOX)
-public class GearBoxService extends AbstractService<GearBoxDTO, GearBox, Long> {
+@Service(ROLE)
+public class RoleService extends AbstractService<RoleDTO, Role, Long> {
+
+
     @Autowired
-    private GearBoxRepository repository;
+    private RoleRepository repository;
     @Autowired
-    private GearBoxMapper mapper;
+    private RoleMapper mapper;
 
 
     @Override
-    public void save(GearBox gearBox) {
-        if(!Objects.isNull(repository) && !Objects.isNull(gearBox.getName())){
-            repository.save(gearBox);
+    public void save(Role role) {
+        try{
+            if(!Objects.isNull(role) && !Objects.isNull(role.getLabel())){
+                repository.save(role);
+            }else{
+                throw new ShafagException("role cannot be added");
+            }
+        }catch (ShafagException e){
+            e.getMessage();
         }
+
     }
 
     @Override
-    public GearBoxDTO getById(Long id) {
+    public RoleDTO getById(Long id) {
         return mapper.getById(id);
     }
 
     @Override
-    public Set<GearBoxDTO> getAll() {
+    public Set<RoleDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<GearBoxDTO> getAll(SearchDTO searchDTO) {
+    public Set<RoleDTO> getAll(SearchDTO searchDTO) {
         return null;
     }
 

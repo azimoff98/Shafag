@@ -3,8 +3,7 @@ package az.shafag.testapp.dao.mapper;
 import az.shafag.testapp.dto.GearBoxDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
-
-import java.util.List;
+import java.util.Set;
 
 @Mapper
 public interface GearBoxMapper {
@@ -13,9 +12,9 @@ public interface GearBoxMapper {
     GearBoxDTO getById(Long id);
 
     @Select("select * from shefeq.gearbox")
-    List<GearBoxDTO> getAll();
+    Set<GearBoxDTO> getAll();
 
     @Select("select * from shefeq.gearbox where isActive = 1")
-    List<GearBoxDTO> getAllActive();
+    Set<GearBoxDTO> getAllActive();
 
 }

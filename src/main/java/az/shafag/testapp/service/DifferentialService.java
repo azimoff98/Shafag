@@ -5,6 +5,7 @@ import az.shafag.testapp.dao.mapper.DifferentialMapper;
 import az.shafag.testapp.dao.repository.DifferentialRepository;
 import az.shafag.testapp.dto.DiferentialDTO;
 import az.shafag.testapp.dto.SearchDTO;
+import az.shafag.testapp.exception.ShafagException;
 import az.shafag.testapp.model.Differential;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,9 +26,16 @@ public class DifferentialService extends AbstractService<DiferentialDTO, Differe
 
     @Override
     public void save(Differential differential) {
-        if(!Objects.isNull(differential) && !Objects.isNull(differential.getName())){
-            repository.save(differential);
+        try{
+            if(!Objects.isNull(differential) && !Objects.isNull(differential.getName())){
+                repository.save(differential);
+            }else{
+                throw new ShafagException("differantial cannot be added ");
+            }
+        }catch (ShafagException e){
+            e.getMessage();
         }
+
     }
 
     @Override

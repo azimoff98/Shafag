@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface GearBoxRepository extends CrudRepository<Long, GearBox> {
+public interface GearBoxRepository extends CrudRepository<GearBox,Long> {
 }

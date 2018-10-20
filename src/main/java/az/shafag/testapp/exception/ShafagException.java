@@ -1,4 +1,10 @@
-package az.shafag.testapp;
+package az.shafag.testapp.exception;
 
-public class ShafagException {
+public class ShafagException extends Exception{
+
+    public ShafagException(String message){
+        super(message);
+    }
+
+
 }

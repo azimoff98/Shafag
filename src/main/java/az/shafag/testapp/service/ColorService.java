@@ -4,6 +4,7 @@ import az.shafag.testapp.dao.mapper.ColorMapper;
 import az.shafag.testapp.dao.repository.ColorRepository;
 import az.shafag.testapp.dto.ColorDTO;
 import az.shafag.testapp.dto.SearchDTO;
+import az.shafag.testapp.exception.ShafagException;
 import az.shafag.testapp.model.Color;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,8 +26,14 @@ public class ColorService  extends AbstractService<ColorDTO, Color, Long>{
 
     @Override
     public void save(Color color) {
-        if(!Objects.isNull(color) && !Objects.isNull(color.getName())){
-            repository.save(color);
+        try{
+            if(!Objects.isNull(color) && !Objects.isNull(color.getName())){
+                repository.save(color);
+            }else{
+                throw new ShafagException("color cannot be added");
+            }
+        }catch (ShafagException e){
+            e.getMessage();
         }
     }
 

@@ -4,6 +4,7 @@ import az.shafag.testapp.dao.mapper.CityMapper;
 import az.shafag.testapp.dao.repository.CityRepository;
 import az.shafag.testapp.dto.CityDTO;
 import az.shafag.testapp.dto.SearchDTO;
+import az.shafag.testapp.exception.ShafagException;
 import az.shafag.testapp.model.City;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,8 +28,14 @@ public class CityService extends AbstractService<CityDTO, City, Long >{
 
     @Override
     public void save(City city) {
-        if(!Objects.isNull(city) && !Objects.isNull(city.getName())){
-            repository.save(city);
+        try{
+            if(!Objects.isNull(city) && !Objects.isNull(city.getName())){
+                repository.save(city);
+            }else{
+                throw new ShafagException("city cannot be added");
+            }
+        }catch (ShafagException e){
+            e.getMessage();
         }
 
     }

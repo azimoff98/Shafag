@@ -16,8 +16,7 @@ public interface VehicleMapper {
             //id
             @Result(property = "id", column = "id", id = true),
             //engine
-            @Result(property = "engine", column = "engine", javaType = EngineDTO.class,
-                    many = @Many(select = "az.shafag.testapp.dao.mapper.EngineMapper.getById")),
+            @Result(property = "engine", column = "engine"),
             //horsepower
             @Result(property = "horsePower", column = "horse_power"),
             //isNew

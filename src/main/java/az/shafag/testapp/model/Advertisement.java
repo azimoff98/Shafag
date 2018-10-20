@@ -1,8 +1,6 @@
 package az.shafag.testapp.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.google.api.services.sqladmin.model.User;
-import org.apache.ibatis.annotations.Many;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -18,12 +16,8 @@ public class Advertisement {
     @Column(name = "id")
     private Long id;
 
-
+    @Column(name = "key")
     private String key;
-
-    @ManyToOne
-    @JoinColumn(name = "applier_id")
-    private Users user;
 
     @OneToOne
     @JoinColumn(name = "vehicle_id")
@@ -69,7 +63,7 @@ public class Advertisement {
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "applier_id", nullable = false)
-    private User applier;
+    private Users applier;
 
     public Advertisement() {
     }
@@ -88,9 +82,8 @@ public class Advertisement {
                          Short status,
                          Integer isActive,
                          Owner owner,
-                         User applier) {
+                         Users applier) {
         this.key = key;
-        this.user = user;
         this.vehicle = vehicle;
         this.city = city;
         this.currency = currency;
@@ -101,7 +94,7 @@ public class Advertisement {
         this.label = label;
         this.seenCount = seenCount;
         this.status = status;
-        this.isActive = isActive;
+        this.isActive = 0;
         this.owner = owner;
         this.applier = applier;
     }
@@ -122,13 +115,6 @@ public class Advertisement {
         this.key = key;
     }
 
-    public Users getUser() {
-        return user;
-    }
-
-    public void setUser(Users user) {
-        this.user = user;
-    }
 
     public Vehicle getVehicle() {
         return vehicle;
@@ -226,11 +212,11 @@ public class Advertisement {
         this.owner = owner;
     }
 
-    public User getApplier() {
+    public Users getApplier() {
         return applier;
     }
 
-    public void setApplier(User applier) {
+    public void setApplier(Users applier) {
         this.applier = applier;
     }
 }
