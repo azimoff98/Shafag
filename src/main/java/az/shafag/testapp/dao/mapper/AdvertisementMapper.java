@@ -27,13 +27,13 @@ public interface AdvertisementMapper {
             @Result(property = "status", column = "status"),
             @Result(property = "city", column = "city_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.CityMapper.getById"),javaType = CityDTO.class),
-            @Result(property = "currency", column = "currency_id",
+            @Result(property = "currencyDTO", column = "currency_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.CurrencyMapper.getById"), javaType = CurrencyDTO.class),
-            @Result(property = "owner", column = "owner_id",
+            @Result(property = "ownerDTO", column = "owner_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.OwnerMapper.getById"), javaType = OwnerDTO.class),
-            @Result(property = "applier", column = "applier_id",
+            @Result(property = "userDTO", column = "applier_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.UserMapper.getById"), javaType = UserDTO.class),
-            @Result(property = "vehicle", column = "vehicle_id",
+            @Result(property = "vehicleDTO", column = "vehicle_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.VehicleMapper.getById"))
         }
     )
@@ -54,13 +54,13 @@ public interface AdvertisementMapper {
             @Result(property = "status", column = "status"),
             @Result(property = "cityDTO", column = "city_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.CityMapper.getById"),javaType = CityDTO.class),
-            @Result(property = "currency", column = "currency_id",
+            @Result(property = "currencyDTO", column = "currency_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.CurrencyMapper.getById"), javaType = CurrencyDTO.class),
-            @Result(property = "owner", column = "owner_id",
+            @Result(property = "ownerDTO", column = "owner_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.OwnerMapper.getById"), javaType = OwnerDTO.class),
-            @Result(property = "applier", column = "applier_id",
+            @Result(property = "userDTO", column = "applier_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.UserMapper.getById"), javaType = UserDTO.class),
-            @Result(property = "vehicle", column = "vehicle_id",
+            @Result(property = "vehicleDTO", column = "vehicle_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.VehicleMapper.getById"))
     }
     )

@@ -8,8 +8,8 @@ import az.shafag.testapp.model.Advertisement;
 import org.apache.commons.lang.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.Objects;
-import java.util.Set;
+
+import java.util.*;
 
 import static az.shafag.testapp.constant.ServiceName.*;
 
@@ -87,6 +87,10 @@ public class AdvertisementService extends AbstractService<AdvertisementDTO, Adve
         return RandomStringUtils.random(length, true, true);
 
     }
+
+
+
+
 
 
 

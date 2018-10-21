@@ -6,7 +6,6 @@
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
       <user-name>shefeq</user-name>
       <introspection-schemas>step_diploma:shefeq</introspection-schemas>
     </data-source>

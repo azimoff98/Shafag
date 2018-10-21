@@ -1,21 +1,20 @@
 package az.shafag.testapp.dto;
 
-import az.shafag.testapp.model.Brand;
-import az.shafag.testapp.model.Picture;
+
 
 import java.util.Set;
 
 public class VehicleDTO {
 
-    private Integer millegeFrom;
-    private Integer millegeTo;
-    private Integer yearFrom;
-    private Integer yearTo;
-    private EngineDTO engineVolumeFrom;
-    private EngineDTO engineVolumeTo;
+    private Long id;
+    private Integer millage;
+    private Integer year;
+    private Integer engine;
+    private Integer horsePower;
     private BrandDTO brand;
     private ModelDTO model;
     private ColorDTO color;
+    private Integer isNew;
     private GearBoxDTO gearBox;
     private DiferentialDTO differential;
     private FuelTypeDTO fuelType;
@@ -23,52 +22,74 @@ public class VehicleDTO {
     private Set<SpecsDTO> specs;
     private Set<PictureDTO> pictures;
 
-    public Integer getMillegeFrom() {
-        return millegeFrom;
+    public VehicleDTO() {
+
     }
 
-    public void setMillegeFrom(Integer millegeFrom) {
-        this.millegeFrom = millegeFrom;
+    public VehicleDTO(Long id, Integer millage, Integer year, Integer engine, Integer horsePower, BrandDTO brand, ModelDTO model, ColorDTO color, Integer isNew, GearBoxDTO gearBox, DiferentialDTO differential, FuelTypeDTO fuelType, BodyTypeDTO bodyType, Set<SpecsDTO> specs, Set<PictureDTO> pictures) {
+        this.id = id;
+        this.millage = millage;
+        this.year = year;
+        this.engine = engine;
+        this.horsePower = horsePower;
+        this.brand = brand;
+        this.model = model;
+        this.color = color;
+        this.isNew = isNew;
+        this.gearBox = gearBox;
+        this.differential = differential;
+        this.fuelType = fuelType;
+        this.bodyType = bodyType;
+        this.specs = specs;
+        this.pictures = pictures;
     }
 
-    public Integer getMillegeTo() {
-        return millegeTo;
+    public Integer getIsNew() {
+        return isNew;
     }
 
-    public void setMillegeTo(Integer millegeTo) {
-        this.millegeTo = millegeTo;
+    public void setIsNew(Integer isNew) {
+        this.isNew = isNew;
     }
 
-    public Integer getYearFrom() {
-        return yearFrom;
+    public Long getId() {
+        return id;
     }
 
-    public void setYearFrom(Integer yearFrom) {
-        this.yearFrom = yearFrom;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public Integer getYearTo() {
-        return yearTo;
+    public Integer getMillage() {
+        return millage;
     }
 
-    public void setYearTo(Integer yearTo) {
-        this.yearTo = yearTo;
+    public void setMillage(Integer millage) {
+        this.millage = millage;
     }
 
-    public EngineDTO getEngineVolumeFrom() {
-        return engineVolumeFrom;
+    public Integer getYear() {
+        return year;
     }
 
-    public void setEngineVolumeFrom(EngineDTO engineVolumeFrom) {
-        this.engineVolumeFrom = engineVolumeFrom;
+    public void setYear(Integer year) {
+        this.year = year;
     }
 
-    public EngineDTO getEngineVolumeTo() {
-        return engineVolumeTo;
+    public Integer getEngine() {
+        return engine;
     }
 
-    public void setEngineVolumeTo(EngineDTO engineVolumeTo) {
-        this.engineVolumeTo = engineVolumeTo;
+    public void setEngine(Integer engine) {
+        this.engine = engine;
+    }
+
+    public Integer getHorsePower() {
+        return horsePower;
+    }
+
+    public void setHorsePower(Integer horsePower) {
+        this.horsePower = horsePower;
     }
 
     public BrandDTO getBrand() {

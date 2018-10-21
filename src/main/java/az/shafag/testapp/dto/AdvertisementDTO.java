@@ -14,6 +14,7 @@ public class AdvertisementDTO {
     private Double price;
     private Integer seenCount;
     private Short status;
+    private OwnerDTO ownerDTO;
     private CityDTO cityDTO;
     private CurrencyDTO currencyDTO;
     //Applier
@@ -33,6 +34,7 @@ public class AdvertisementDTO {
                             Double price,
                             Integer seenCount,
                             Short status,
+                            OwnerDTO ownerDTO,
                             CityDTO cityDTO,
                             CurrencyDTO currencyDTO,
                             UserDTO userDTO,
@@ -47,6 +49,7 @@ public class AdvertisementDTO {
         this.price = price;
         this.seenCount = seenCount;
         this.status = status;
+        this.ownerDTO = ownerDTO;
         this.cityDTO = cityDTO;
         this.currencyDTO = currencyDTO;
         this.userDTO = userDTO;
@@ -131,6 +134,14 @@ public class AdvertisementDTO {
 
     public void setStatus(Short status) {
         this.status = status;
+    }
+
+    public OwnerDTO getOwnerDTO() {
+        return ownerDTO;
+    }
+
+    public void setOwnerDTO(OwnerDTO ownerDTO) {
+        this.ownerDTO = ownerDTO;
     }
 
     public CityDTO getCityDTO() {

@@ -15,7 +15,7 @@ public interface VehicleMapper {
     @Results(value = {
             //id
             @Result(property = "id", column = "id", id = true),
-            //engine
+            //engineVolumeFrom
             @Result(property = "engine", column = "engine"),
             //horsepower
             @Result(property = "horsePower", column = "horse_power"),
@@ -25,10 +25,10 @@ public interface VehicleMapper {
             //millage
             @Result(property = "millage", column = "millage"),
             //YEAR
-            @Result(property = "yaer", column = "year", javaType = Date.class),
+            @Result(property = "year", column = "year"),
             //bodyType
             @Result(property = "bodyType", column = "body_type_id", javaType = BodyTypeDTO.class,
-                    many = @Many(select = "az.shafag.testapp.dao.mapper.BodyTypeId.getById")),
+                    many = @Many(select = "az.shafag.testapp.dao.mapper.BodyTypeMapper.getById")),
             //brand
             @Result(property = "brand", column = "brand_id", javaType = BrandDTO.class,
                     many = @Many(select = "az.shafag.testapp.dao.mapper.BrandMapper.getById")),
@@ -58,9 +58,10 @@ public interface VehicleMapper {
     @Select("select * from shefeq.vehicle where id=#{id} and is_active=1 ")
     VehicleDTO getById(Long id);
 
-    @Select("select * from shefeq.fuel_type")
+    @Select("select * from shefeq.vehicle")
     Set<VehicleDTO> getAll();
 
-    @Select("select * from shefeq.fuel_type is_active=1 ")
+    @Select("select * from shefeq.vehicle where  is_active=1 ")
     Set<VehicleDTO> getAllActive();
+
 }
