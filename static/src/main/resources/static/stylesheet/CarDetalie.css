@@ -1,0 +1,128 @@
+body {
+    background-color: #cccccc;
+
+}
+
+
+
+#galery {
+    background-color:#1d1d1d !important;
+    font-family: "Asap", sans-serif;
+    color:#989898;
+    margin:10px;
+    font-size:16px;
+}
+
+#demo {
+    height:100%;
+    position:relative;
+    overflow:hidden;
+}
+
+
+.green{
+    background-color:#6fb936;
+}
+.thumb{
+    margin-bottom: 20px;
+}
+
+.page-top{
+    margin-top:150px;
+}
+
+
+img.zoom {
+    width: 250px;
+    height: 200px;
+
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+/-ms-transition: all .3s ease-in-out;/
+}
+
+
+.transition {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.modal-header {
+
+    border-bottom: none;
+}
+.modal-title {
+    color:#000;
+}
+.modal-footer{
+    display:none;
+}
+
+.zoom {
+
+    transition: transform .2s;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Safari 3-8 */
+    transform: scale(1.3);
+}
+
+
+
+
+#xett{
+    margin-top: 2px;
+}
+.salam{
+    font-weight: bold;
+}
+
+#qiyme{
+    color: #AA3C39;
+    font-weight: bold;
+}
+#qiymet{
+color: white;
+}
+
+.elan{
+    background: #fff;
+    width: 56%;
+    margin-left: 125px !important;
+}
+
+.elan div:first-child{
+    background: #c71b25;
+    width: 245px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elan div:first-child h2{
+    margin: 0;
+    padding: 0;
+}
+
+.elan div:last-child{
+    margin-left: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elan div:last-child h4{
+    padding: 0;
+    margin: 0;
+}
+
+/*#nomre{*/
+    /*margin-left: 50px;*/
+/*}*/

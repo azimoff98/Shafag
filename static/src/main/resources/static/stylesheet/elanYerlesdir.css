@@ -1,0 +1,69 @@
+body {
+    background-color: #cccccc;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+button {
+    width: 148px;
+}
+#dropdownMenu55{
+    width: 148px;
+    height: 45px;
+}
+#dropdownMenu555{
+    width: 148px;
+    height: 43px;
+}
+
+#inputGroupFile01{
+    width: 148px;
+    height: 43px;
+}
+#inputGroupFile02{
+    width: 148px;
+    height: 43px;
+}
+
+#inputGroupFile07{
+    width: 148px;
+    height: 43px;
+}
+
+#inputGroupFile10{
+    width: 148px;
+    height: 43px;
+}
+
+#inputtext{
+    width: 600px;
+    height: 150px;
+}
+
+.form-check-input {
+    width: 19px;
+    height: 19px;
+}
+
+
+#nav{
+    height: 56px;
+}
+
+#inputGroupFile071{
+    width: 563px;
+    height: 38px;
+}
+
+#inputGroupFile0171{
+    width: 569px;
+    height: 38px;
+}
+
+#dropdownMenu66{
+    width: 563px;
+    height: 38px;
+}
