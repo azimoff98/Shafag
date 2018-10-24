@@ -1,4 +1,5 @@
 package az.shafag.testapp.service;
+import az.shafag.testapp.annotation.ServiceMethod;
 import az.shafag.testapp.dao.mapper.AdvertisementMapper;
 import az.shafag.testapp.dao.repository.AdvertisementRepository;
 import az.shafag.testapp.dto.AdvertisementDTO;
@@ -59,8 +60,9 @@ public class AdvertisementService extends AbstractService<AdvertisementDTO, Adve
     }
 
     @Override
+    @ServiceMethod
     public Set<AdvertisementDTO> getAll(SearchDTO searchDTO) {
-        return mapper.getAllActive();
+        return mapper.getAllByFilter(searchDTO);
     }
 
     //ONLY PRIVILEGED USERS CAN DELETE BY ID

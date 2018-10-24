@@ -1,10 +1,10 @@
 package az.shafag.testapp.constant;
 
 public class ServiceName {
-    public static final String ADVERTISEMENT = "ADVERTISEMENT";
+    public static final String ADVERTISEMENT = "advertisement";
     public static final String BODY_TYPE = "BODY_TYPE";
     public static final String BRAND = "BRAND";
-    public static final String CITY = "CITY";
+    public static final String CITY = "city";
     public static final String COLOR = "COLOR";
     public static final String CURRENCY = "CURRENCY";
     public static final String DIFFERENTIAL = "DIFFERENTIAL";

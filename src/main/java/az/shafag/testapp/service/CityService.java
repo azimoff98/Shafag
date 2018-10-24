@@ -1,5 +1,6 @@
 package az.shafag.testapp.service;
 
+import az.shafag.testapp.annotation.ServiceMethod;
 import az.shafag.testapp.dao.mapper.CityMapper;
 import az.shafag.testapp.dao.repository.CityRepository;
 import az.shafag.testapp.dto.CityDTO;
@@ -46,6 +47,7 @@ public class CityService extends AbstractService<CityDTO, City, Long >{
     }
 
     @Override
+    @ServiceMethod
     public Set<CityDTO> getAll() {
         return mapper.getAll();
     }

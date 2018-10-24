@@ -65,7 +65,7 @@ public interface AdvertisementMapper {
     }
     )
     @SelectProvider(type = AdvertisementProvider.class,method = "getAdvertisementsByFilter")
-    List<AdvertisementDTO> getAllByFilter(SearchDTO searchDTO);
+    Set<AdvertisementDTO> getAllByFilter(SearchDTO searchDTO);
 
     @Select("select * from advertisement")
     Set<AdvertisementDTO> getAll();

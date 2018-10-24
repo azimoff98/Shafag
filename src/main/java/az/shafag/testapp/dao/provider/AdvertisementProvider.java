@@ -3,6 +3,8 @@ package az.shafag.testapp.dao.provider;
 import az.shafag.testapp.dto.IdDTO;
 import az.shafag.testapp.dto.SearchDTO;
 
+import java.util.Objects;
+
 public class AdvertisementProvider {
     public String getAdvertisementsByFilter(SearchDTO searchDTO){
         return "select ad.* from advertisement ad\n" +
@@ -26,25 +28,29 @@ public class AdvertisementProvider {
     private String buildCondition(SearchDTO searchDTO){
         StringBuilder s = new StringBuilder();
         IdDTO temp;
-        if ( (temp=searchDTO.getApplier())!=null && temp.getId()!=null) s.append(" and u.id=#{applier.id}");
-        if ((temp=searchDTO.getBodyType())!=null && temp.getId()!=null) s.append(" and b.id=#{body.id}");
-        if ((temp=searchDTO.getBrand())!=null && temp.getId()!=null) s.append(" and br.id=#{brand.id}");
-        if ((temp=searchDTO.getCity())!=null && temp.getId()!=null) s.append(" and c.id=#{city.id}");
-        if ((temp=searchDTO.getColor())!=null && temp.getId()!=null) s.append(" and col.id=#{color.id}");
-        if ((temp=searchDTO.getCurrency())!=null && temp.getId()!=null) s.append(" and cur.id=#{currency.id}");
-        if ((temp=searchDTO.getDifferential())!=null && temp.getId()!=null) s.append(" and d.id=#{differential.id}");
-        if ((temp=searchDTO.getFuelType())!=null && temp.getId()!=null) s.append(" and f.id=#{fuelType.id}");
-        if ((temp=searchDTO.getGearBox())!=null && temp.getId()!=null) s.append(" and g.id=#{gearBox.id}");
-        if ((temp=searchDTO.getModel())!=null && temp.getId()!=null) s.append(" and m.id=#{model.id}");
-        if ((temp=searchDTO.getOwner())!=null && temp.getId()!=null) s.append(" and o.id=#{owner.id}");
-        if (searchDTO.getEngineVolumeFrom()!=null) s.append(" and v.engine>= #{engineVolumeFrom}");
-        if (searchDTO.getEngineVolumeTo()!=null) s.append(" and v.engine<= #{engineVolumeTo}");
-        if (searchDTO.getPriceFrom()!=null) s.append(" and v.price>= #{priceFrom}");
-        if (searchDTO.getPriceTo()!=null) s.append(" and v.price<= #{priceTo}");
-        if (searchDTO.getYearFrom()!=null) s.append(" and v.year>= #{yearFrom}");
-        if (searchDTO.getYearTo()!=null) s.append(" and v.year<= #{yearTo}");
-        if (searchDTO.getMillageFrom()!=null) s.append(" and v.millage>= #{millageFrom}");
-        if (searchDTO.getMillageTo()!=null) s.append(" and v.millage<= #{millageTo}");
+        if (Objects.nonNull(searchDTO)) {
+            if ((temp = searchDTO.getApplier()) != null && temp.getId() != null) s.append(" and u.id=#{applier.id}");
+            if ((temp = searchDTO.getBodyType()) != null && temp.getId() != null) s.append(" and b.id=#{body.id}");
+            if ((temp = searchDTO.getBrand()) != null && temp.getId() != null) s.append(" and br.id=#{brand.id}");
+            if ((temp = searchDTO.getCity()) != null && temp.getId() != null) s.append(" and c.id=#{city.id}");
+            if ((temp = searchDTO.getColor()) != null && temp.getId() != null) s.append(" and col.id=#{color.id}");
+            if ((temp = searchDTO.getCurrency()) != null && temp.getId() != null)
+                s.append(" and cur.id=#{currency.id}");
+            if ((temp = searchDTO.getDifferential()) != null && temp.getId() != null)
+                s.append(" and d.id=#{differential.id}");
+            if ((temp = searchDTO.getFuelType()) != null && temp.getId() != null) s.append(" and f.id=#{fuelType.id}");
+            if ((temp = searchDTO.getGearBox()) != null && temp.getId() != null) s.append(" and g.id=#{gearBox.id}");
+            if ((temp = searchDTO.getModel()) != null && temp.getId() != null) s.append(" and m.id=#{model.id}");
+            if ((temp = searchDTO.getOwner()) != null && temp.getId() != null) s.append(" and o.id=#{owner.id}");
+            if (searchDTO.getEngineVolumeFrom() != null) s.append(" and v.engine>= #{engineVolumeFrom}");
+            if (searchDTO.getEngineVolumeTo() != null) s.append(" and v.engine<= #{engineVolumeTo}");
+            if (searchDTO.getPriceFrom() != null) s.append(" and v.price>= #{priceFrom}");
+            if (searchDTO.getPriceTo() != null) s.append(" and v.price<= #{priceTo}");
+            if (searchDTO.getYearFrom() != null) s.append(" and v.year>= #{yearFrom}");
+            if (searchDTO.getYearTo() != null) s.append(" and v.year<= #{yearTo}");
+            if (searchDTO.getMillageFrom() != null) s.append(" and v.millage>= #{millageFrom}");
+            if (searchDTO.getMillageTo() != null) s.append(" and v.millage<= #{millageTo}");
+        }
         return s.toString();
     }
 }

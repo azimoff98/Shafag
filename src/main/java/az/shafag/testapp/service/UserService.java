@@ -48,6 +48,10 @@ public class UserService extends AbstractService<UserDTO, Users, Long> {
         return mapper.getById(id);
     }
 
+    public Users getByUsername(String username){
+        return repository.findByUsername(username);
+    }
+
     @Override
     public Set<UserDTO> getAll() {
         return mapper.getAll();

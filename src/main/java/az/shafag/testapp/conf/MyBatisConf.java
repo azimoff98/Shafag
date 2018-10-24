@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.sql.DataSource;
 
@@ -22,6 +23,11 @@ public class MyBatisConf {
         sessionFactoryBean.setDataSource(dataSource);
         sessionFactoryBean.setConfigLocation(new ClassPathResource("mybatis-conf.xml"));
         return sessionFactoryBean;
+    }
+
+    @Bean
+    BCryptPasswordEncoder bCryptPasswordEncoder(){
+        return new BCryptPasswordEncoder();
     }
 
 }

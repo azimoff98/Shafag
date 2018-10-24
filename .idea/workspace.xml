@@ -1,34 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="221ee29f-8d5a-48da-9be5-014948b8ab52" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/AdvertisementMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/BodyTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/BrandMapper" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/ColorMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/CurrencyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/DifferantialMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/FuelTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/GearBoxMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/ModelMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/OwnerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/PictureMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/RoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/SpecMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/VehicleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/323d385a-2af9-4c4e-af69-85bb6d71009a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/323d385a-2af9-4c4e-af69-85bb6d71009a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/323d385a-2af9-4c4e-af69-85bb6d71009a/storage_v2/_src_/database/step_diploma.7y5hGw/schema/shefeq.4lAmyg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/323d385a-2af9-4c4e-af69-85bb6d71009a/storage_v2/_src_/database/step_diploma.7y5hGw/schema/shefeq.4lAmyg.meta" afterDir="false" />
+    <list default="true" id="221ee29f-8d5a-48da-9be5-014948b8ab52" name="Default" comment="services">
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/conf/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/conf/WebSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/SecurityConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/controller/UserControllerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/FilterMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/FilterDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/FilterItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/filters/JWTAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/filters/JWTAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/model/ApplicationUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/utility/FilterItemTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/utility/Utility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/urls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/utility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/conf/MyBatisConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/conf/MyBatisConf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/ServiceName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/ServiceName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/AdvertisementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/AdvertisementMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/SpecMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/SpecMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/VehicleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/VehicleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/AdvertisementDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/AdvertisementDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/VehicleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/VehicleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/provider/AdvertisementProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/provider/AdvertisementProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/PictureRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/PictureRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/SpecifitacionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/SpecifitacionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/SearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/SearchDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/registry/MethodRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/registry/MethodRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/AdvertisementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/AdvertisementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dto/VehicleDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dto/VehicleDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/CityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/CityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/GearBoxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/GearBoxService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/stylesheet/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/stylesheet/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/conf/MyBatisConf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/conf/MyBatisConf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/constant/ServiceName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/constant/ServiceName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/mapper/AdvertisementMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/mapper/AdvertisementMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/mapper/VehicleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/mapper/VehicleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/provider/AdvertisementProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/provider/AdvertisementProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/repository/PictureRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/repository/PictureRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/repository/SpecifitacionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/repository/SpecifitacionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dao/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dto/SearchDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/dto/SearchDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/registry/MethodRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/registry/MethodRegistry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/service/AdvertisementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/service/AdvertisementService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/service/CityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/service/CityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/service/GearBoxService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/service/GearBoxService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/az/shafag/testapp/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/az/shafag/testapp/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/stylesheet/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/stylesheet/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,95 +86,52 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="step_diploma@104.199.249.121" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="step_diploma@104.199.249.121" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="step_diploma@104.199.249.121" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="step_diploma: database" type="6d9b600a:PostgresImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="step_diploma@104.199.249.121" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="step_diploma: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="shefeq: schema" type="a16502c0:PostgresImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="step_diploma@104.199.249.121" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="step_diploma: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="shefeq: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VehicleMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/VehicleMapper.java">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="978">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="172">
+              <caret line="119" column="97" selection-start-line="119" selection-start-column="97" selection-end-line="119" selection-end-column="97" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdvertisementProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/provider/AdvertisementProvider.java">
+      <file leaf-file-name="utility.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/utility.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="46" column="86" lean-forward="true" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="273">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Runable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/Runable.java">
+      <file leaf-file-name="urls.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/urls.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdvertisementService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/AdvertisementService.java">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1062">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="21">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MethodName.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/MethodName.java">
+      <file leaf-file-name="FilterMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/FilterMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EtrafliAxtaris.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/html/EtrafliAxtaris.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="27" column="92" selection-start-line="27" selection-start-column="92" selection-end-line="27" selection-end-column="92" />
+            <state relative-caret-position="336">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,14 +139,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdvertisementMapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/AdvertisementMapper.java">
+      <file leaf-file-name="FilterItemTypeHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/utility/FilterItemTypeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+            <state relative-caret-position="209">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/utility/Utility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Query.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/Query.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/FilterItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterDto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/FilterDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -170,8 +197,9 @@
       <list>
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -188,6 +216,7 @@
       <find>year</find>
       <find>vs</find>
       <find>vsleft</find>
+      <find>Bütü</find>
     </findStrings>
     <replaceStrings>
       <replace>CityDTO</replace>
@@ -199,40 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/ColorService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/CurrencyService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/DifferentialService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/FuelTypeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/GearBoxService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/ModelService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/OwnerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/RoleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/VehicleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/IdDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/SearchDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/provider/AdvertisementProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/model/Advertisement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/model/Users.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/model/Vehicle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/EngineService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/EngineRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/model/Engine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/EngineMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-conf.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/conf/MyBatisConf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/conf/MyBatisConf.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/Advertisement.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/BodyTypeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/BrandMapper" />
-        <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/ColorMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/CurrencyMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/DifferantialMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/FuelTypeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/GearBoxMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/ModelMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/OwnerMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/PictureMapper.xml" />
@@ -241,15 +236,49 @@
         <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/SpecMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/VehicleMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/AdvertisementDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/AdvertisementMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/VehicleDTO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/CityMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/AdvertisementMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/SpecMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/AdvertisementService.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/MethodName.java" />
         <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/VehicleMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/conf/MyBatisConf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/conf/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/SecurityConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/filters/JWTAuthorizationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/conf/WebSecurity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/security/UserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/model/ApplicationUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/filters/JWTAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/controller/UserControllerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/GearBoxService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/PictureRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/SpecifitacionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/provider/AdvertisementProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/AdvertisementMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/registry/MethodRegistry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/SearchDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/AdvertisementService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/stylesheet/index.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/utility.js" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/ServiceName.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/CityService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/urls.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/html/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/FilterItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/FilterDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/Query.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/utility/Utility.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/utility/FilterItemTypeHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/FilterMapper.java" />
       </list>
     </option>
   </component>
@@ -285,33 +314,35 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="shafag_auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shafag" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shafag_auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shafag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shafag_auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shafag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shafag_auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shafag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shafag_auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shafag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -319,7 +350,7 @@
               <item name="az" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shafag_auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shafag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -328,7 +359,7 @@
               <item name="shafag" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shafag_auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shafag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -338,14 +369,159 @@
               <item name="testapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shafag_auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="filters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="registry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shafag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shafag_auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shafag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -353,7 +529,7 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="shafag_auto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shafag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -361,12 +537,19 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,8 +559,8 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -490,7 +673,8 @@
       <workItem from="1539516719459" duration="8805000" />
       <workItem from="1539876946125" duration="7098000" />
       <workItem from="1540034591983" duration="9439000" />
-      <workItem from="1540121124776" duration="8922000" />
+      <workItem from="1540121124776" duration="9237000" />
+      <workItem from="1540394358825" duration="8155000" />
     </task>
     <task id="LOCAL-00001" summary="mybatsi configurations">
       <created>1540044541250</created>
@@ -503,7 +687,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103984000" />
+    <option name="totallyTimeSpent" value="112454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -515,25 +699,24 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.1421875" />
+      <window_info anchor="right" id="Database" order="5" weight="0.153125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.24548353" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4229543" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.39744952" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.44952178" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31137088" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3028693" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20416667" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -542,12 +725,13 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.18384697" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39426142" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17534538" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -559,7 +743,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.43572986" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.39744952" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.16471839" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
@@ -568,7 +752,7 @@
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20416667" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.1421875" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.153125" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -587,497 +771,437 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mybatsi configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatsi configurations" />
+    <MESSAGE value="services" />
+    <option name="LAST_COMMIT_MESSAGE" value="services" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/Main.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/CurrencyDTO.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/CurrencyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/MyBatisExceptionTranslator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/SearchDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#2592#2593#0" expanded="true" />
-            <element signature="e#2619#2620#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/AdvertisementDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="e#1760#1761#0" expanded="true" />
-            <element signature="e#1785#1786#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
-            <element signature="e#1876#1877#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-            <element signature="e#1941#1942#0" expanded="true" />
-            <element signature="e#1973#1974#0" expanded="true" />
-            <element signature="e#2011#2012#0" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-            <element signature="e#2099#2100#0" expanded="true" />
-            <element signature="e#2145#2146#0" expanded="true" />
-            <element signature="e#2181#2182#0" expanded="true" />
-            <element signature="e#2212#2213#0" expanded="true" />
-            <element signature="e#2261#2262#0" expanded="true" />
-            <element signature="e#2301#2302#0" expanded="true" />
-            <element signature="e#2331#2332#0" expanded="true" />
-            <element signature="e#2357#2358#0" expanded="true" />
-            <element signature="e#2395#2396#0" expanded="true" />
-            <element signature="e#2425#2426#0" expanded="true" />
-            <element signature="e#2457#2458#0" expanded="true" />
-            <element signature="e#2485#2486#0" expanded="true" />
-            <element signature="e#2527#2528#0" expanded="true" />
-            <element signature="e#2561#2562#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
-            <element signature="e#2629#2630#0" expanded="true" />
-            <element signature="e#2679#2680#0" expanded="true" />
-            <element signature="e#2723#2724#0" expanded="true" />
-            <element signature="e#2755#2756#0" expanded="true" />
-            <element signature="e#2783#2784#0" expanded="true" />
-            <element signature="e#2825#2826#0" expanded="true" />
-            <element signature="e#2859#2860#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#2928#2929#0" expanded="true" />
-            <element signature="e#2979#2980#0" expanded="true" />
-            <element signature="e#3021#3022#0" expanded="true" />
-            <element signature="e#3053#3054#0" expanded="true" />
-            <element signature="e#3082#3083#0" expanded="true" />
-            <element signature="e#3125#3126#0" expanded="true" />
-            <element signature="e#3161#3162#0" expanded="true" />
-            <element signature="e#3198#3199#0" expanded="true" />
-            <element signature="e#3229#3230#0" expanded="true" />
-            <element signature="e#3279#3280#0" expanded="true" />
-            <element signature="e#3319#3320#0" expanded="true" />
-            <element signature="e#3354#3355#0" expanded="true" />
-            <element signature="e#3384#3385#0" expanded="true" />
-            <element signature="e#3431#3432#0" expanded="true" />
-            <element signature="e#3469#3470#0" expanded="true" />
-            <element signature="e#3512#3513#0" expanded="true" />
-            <element signature="e#3546#3547#0" expanded="true" />
-            <element signature="e#3605#3606#0" expanded="true" />
-            <element signature="e#3651#3652#0" expanded="true" />
-            <element signature="e#3686#3687#0" expanded="true" />
-            <element signature="e#3716#3717#0" expanded="true" />
-            <element signature="e#3763#3764#0" expanded="true" />
-            <element signature="e#3801#3802#0" expanded="true" />
-            <element signature="e#3842#3843#0" expanded="true" />
-            <element signature="e#3875#3876#0" expanded="true" />
-            <element signature="e#3931#3932#0" expanded="true" />
-            <element signature="e#3975#3976#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/PictureDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/FuelTypeDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/EngineDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="620">
+          <caret line="116" column="65" selection-start-line="116" selection-start-column="65" selection-end-line="116" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/model/Users.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="210">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/model/Vehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.1/postgresql-42.2.1.jar!/org/postgresql/jdbc/TimestampUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://323d385a-2af9-4c4e-af69-85bb6d71009a/database/step_diploma/schema/shefeq/table/body_type">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/BodyTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-          <folding>
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/AdvertisementMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/BodyTypeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="62" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/BrandMapper">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/CityMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/ColorMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/CurrencyMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/DifferantialMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/FuelTypeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/GearBoxMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/ModelMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/OwnerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/PictureMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/RoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/SpecMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/az.shafag.testapp.dao.mapper/VehicleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/BodyTypeDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/VehicleDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="e#1382#1383#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1453#1454#0" expanded="true" />
-            <element signature="e#1487#1488#0" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1666#1667#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
-            <element signature="e#1751#1752#0" expanded="true" />
-            <element signature="e#1783#1784#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1851#1852#0" expanded="true" />
-            <element signature="e#1883#1884#0" expanded="true" />
-            <element signature="e#1917#1918#0" expanded="true" />
-            <element signature="e#1946#1947#0" expanded="true" />
-            <element signature="e#1991#1992#0" expanded="true" />
-            <element signature="e#2027#2028#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
-            <element signature="e#2098#2099#0" expanded="true" />
-            <element signature="e#2151#2152#0" expanded="true" />
-            <element signature="e#2195#2196#0" expanded="true" />
-            <element signature="e#2229#2230#0" expanded="true" />
-            <element signature="e#2257#2258#0" expanded="true" />
-            <element signature="e#2301#2302#0" expanded="true" />
-            <element signature="e#2335#2336#0" expanded="true" />
-            <element signature="e#2369#2370#0" expanded="true" />
-            <element signature="e#2397#2398#0" expanded="true" />
-            <element signature="e#2441#2442#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
-            <element signature="e#2537#2538#0" expanded="true" />
-            <element signature="e#2581#2582#0" expanded="true" />
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#2653#2654#0" expanded="true" />
-            <element signature="e#2683#2684#0" expanded="true" />
-            <element signature="e#2733#2734#0" expanded="true" />
-            <element signature="e#2771#2772#0" expanded="true" />
-            <element signature="e#2818#2819#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2917#2918#0" expanded="true" />
-            <element signature="e#2965#2966#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3036#3037#0" expanded="true" />
-            <element signature="e#3089#3090#0" expanded="true" />
-            <element signature="e#3129#3130#0" expanded="true" />
-            <element signature="e#3169#3170#0" expanded="true" />
-            <element signature="e#3200#3201#0" expanded="true" />
-            <element signature="e#3253#3254#0" expanded="true" />
-            <element signature="e#3293#3294#0" expanded="true" />
-            <element signature="e#3332#3333#0" expanded="true" />
-            <element signature="e#3360#3361#0" expanded="true" />
-            <element signature="e#3409#3410#0" expanded="true" />
-            <element signature="e#3443#3444#0" expanded="true" />
-            <element signature="e#3487#3488#0" expanded="true" />
-            <element signature="e#3518#3519#0" expanded="true" />
-            <element signature="e#3575#3576#0" expanded="true" />
-            <element signature="e#3615#3616#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/bs-simple-admin/bs-simple-admin/ui.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/html/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/bs-simple-admin/bs-simple-admin/suretlerQutusu.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/SpecMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/BodyTypeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/bs-simple-admin/bs-simple-admin/banNovu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/aspect/LoggerAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="504">
+          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+          <folding>
+            <element signature="e#1488#1489#0" expanded="true" />
+            <element signature="e#1517#1518#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/html/EtrafliAxtaris.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/model/ApplicationUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/filters/JWTAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/SecurityConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/GearBoxService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-406">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/conf/MyBatisConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.5.RELEASE/spring-data-commons-2.0.5.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="147">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/AdvertisementService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/MethodName.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/PictureRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/VehicleMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/SpecifitacionRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="978">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="105">
+          <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/AdvertisementRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/BodyTypeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/BrandRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/repository/CityRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/controller/UserControllerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/conf/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/conf/WebSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/provider/AdvertisementProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="46" column="86" lean-forward="true" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
+        <state relative-caret-position="720">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/Runable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/BodyTypeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="126">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/Main.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Set.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="27" column="92" selection-start-line="27" selection-start-column="92" selection-end-line="27" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="189">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/AdvertisementMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+        <state relative-caret-position="181">
+          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/security/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="25" column="77" lean-forward="true" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/filters/JWTAuthorizationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#401#402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="372" selection-start-line="372" selection-end-line="372" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/factory/annotation/InitDestroyAnnotationBeanPostProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/registry/MethodRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="38" column="23" lean-forward="true" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/SearchDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/registry/AbstractFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/AbstractService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/AdvertisementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
+          <folding>
+            <element signature="e#2025#2026#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/stylesheet/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/ServiceName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/service/CityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+          <folding>
+            <element signature="e#1164#1165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/html/EtrafliAxtaris.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8407" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/urls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/utility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="119" column="97" selection-start-line="119" selection-start-column="97" selection-end-line="119" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/FilterItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/FilterDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/utility/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/utility/FilterItemTypeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/dao/mapper/FilterMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/constant/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
         </state>
       </provider>
     </entry>

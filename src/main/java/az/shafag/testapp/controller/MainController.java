@@ -1,5 +1,6 @@
 package az.shafag.testapp.controller;
 
+import az.shafag.testapp.dto.SearchDTO;
 import az.shafag.testapp.registry.AbstractFactory;
 import az.shafag.testapp.registry.MethodRegistry;
 import az.shafag.testapp.service.AbstractService;
@@ -15,11 +16,14 @@ public class MainController {
     @Autowired
     AbstractFactory factory;
 
+    @Autowired
+    MethodRegistry methodRegistry;
+
     @PostMapping("/{serviceName}/{methodName}")
-    public <T, E> E handlePost(@RequestBody T t,
+    public <T, E> E handlePost(@RequestBody SearchDTO t,
                                @PathVariable("serviceName") String serviceName,
                                @PathVariable("methodName") String methodName) throws InvocationTargetException, IllegalAccessException {
-        return (E) MethodRegistry.getRegistry().get(serviceName).get(methodName).invoke(
+        return (E) methodRegistry.getRegistry().get(serviceName).get(methodName).invoke(
                 factory.get(serviceName, AbstractService.class), t
         );
     }
@@ -29,10 +33,10 @@ public class MainController {
                            @PathVariable("serviceName") String serviceName,
                            @PathVariable("methodName") String methodName) throws InvocationTargetException, IllegalAccessException {
 
-        return t.isEmpty() ? (E) MethodRegistry.getRegistry().get(serviceName).get(methodName).invoke(
+        return t.isEmpty() ? (E) methodRegistry.getRegistry().get(serviceName).get(methodName).invoke(
                 factory.get(serviceName, AbstractService.class), null
         ) :
-                (E) MethodRegistry.getRegistry().get(serviceName).get(methodName).invoke(
+                (E) methodRegistry.getRegistry().get(serviceName).get(methodName).invoke(
                         factory.get(serviceName, AbstractService.class), t
                 );
     }

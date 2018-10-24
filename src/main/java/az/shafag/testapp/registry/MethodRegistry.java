@@ -40,15 +40,15 @@ public class MethodRegistry {
             info("SERVICE NAME :" + service.value());
             for(Method method : reflections1.getMethodsAnnotatedWith(ServiceMethod.class)){
                 methodName = getMethodName(method);
-                serviceMethod = method.getAnnotation(ServiceMethod.class);
                 info("METHOD NAME :" + methodName);
                 if((methodMap = registry.get(service.value())) == null){
                     methodMap = new HashMap<>();
                     methodMap.put(methodName, method);
+                    registry.put(service.value(), methodMap);
                 }else{
                     methodMap.put(methodName, method);
+                    registry.replace(service.value(), methodMap);
                 }
-                registry.replace(service.value(), methodMap);
             }
 
         }

@@ -1,8 +1,6 @@
 package az.shafag.testapp.service;
 
-import az.shafag.testapp.dao.mapper.EngineMapper;
 import az.shafag.testapp.dao.mapper.GearBoxMapper;
-import az.shafag.testapp.dao.repository.EngineRepository;
 import az.shafag.testapp.dao.repository.GearBoxRepository;
 import az.shafag.testapp.dto.GearBoxDTO;
 import az.shafag.testapp.dto.SearchDTO;
