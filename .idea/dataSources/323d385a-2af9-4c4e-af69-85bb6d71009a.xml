@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="step_diploma@104.199.249.121">
-  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.8">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.9">
     <root id="1">
       <ServerVersion>9.6.6</ServerVersion>
     </root>
