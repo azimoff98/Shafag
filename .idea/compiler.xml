@@ -9,6 +9,7 @@
         <module name="Shafag" />
         <module name="Shafag1" />
         <module name="shafag_auto" />
+        <module name="Shafagt" />
       </profile>
     </annotationProcessing>
   </component>
