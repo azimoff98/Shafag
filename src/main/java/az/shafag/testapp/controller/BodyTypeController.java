@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Set;
 
 @RestController
-@RequestMapping("/body_type")
+@RequestMapping("/body-type")
 public class BodyTypeController {
 
 

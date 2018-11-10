@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Set;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/shafag-users")
 public class UserController {
 
     @Autowired

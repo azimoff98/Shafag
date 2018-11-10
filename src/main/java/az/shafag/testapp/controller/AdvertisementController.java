@@ -41,12 +41,12 @@ public class AdvertisementController {
     }
 
 
-    //DELETE ENDPOINT FOR OWNER
-    @PostMapping()
-    public void deleteById(@RequestBody Matcher matcher){
-        advertisementService.delete(matcher.getId(), matcher.getKey());
-
-    }
+//    //DELETE ENDPOINT FOR OWNER
+//    @PostMapping
+//    public void deleteById(@RequestBody Matcher matcher){
+//        advertisementService.delete(matcher.getId(), matcher.getKey());
+//
+//    }
 
 
 
