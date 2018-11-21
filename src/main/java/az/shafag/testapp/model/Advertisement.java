@@ -1,6 +1,7 @@
 package az.shafag.testapp.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -56,12 +57,12 @@ public class Advertisement {
     @Column(name = "is_active")
     private Integer isActive;
 
-    @JsonIgnore
+    @JsonBackReference
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "owner_id", nullable = false)
     private Owner owner;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "applier_id", nullable = false)
     private Users applier;
 

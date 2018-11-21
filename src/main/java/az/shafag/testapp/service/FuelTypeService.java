@@ -25,15 +25,13 @@ public class FuelTypeService extends AbstractService<FuelTypeDTO, FuelType, Long
 
     @Override
     public void save(FuelType fuelType) {
-        try{
+
             if(!Objects.isNull(fuelType) && !Objects.isNull(fuelType.getId())){
                 repository.save(fuelType);
             }else{
                 throw new ShafagException("fuel type cannot be added");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
+
 
     }
 
@@ -43,12 +41,17 @@ public class FuelTypeService extends AbstractService<FuelTypeDTO, FuelType, Long
     }
 
     @Override
+    public Set<FuelTypeDTO> getAllActive() {
+        return mapper.getAllActive();
+    }
+
+    @Override
     public Set<FuelTypeDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<FuelTypeDTO> getAll(SearchDTO searchDTO) {
+    public Set<FuelTypeDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 

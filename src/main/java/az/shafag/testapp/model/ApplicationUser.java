@@ -1,8 +1,10 @@
 package az.shafag.testapp.model;
 
 public class ApplicationUser {
+
     private String username;
     private String password;
+
     public String getUsername() {
         return username;
     }

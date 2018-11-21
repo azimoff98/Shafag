@@ -6,14 +6,97 @@ body {
     width: 150px;
 }
 
-#axtaris{
-    width:121px;
+#axtaris {
+    width: 121px;
+}
+#allModels{
+    position: relative;
+    bottom: 15px;
+}
+.models{
+    padding-left: 32px;
+}
+.panels{
+    position: relative;
+    bottom: 8px;
+}
+.tests{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: white;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 23px;
+    z-index: 6;
+    left: 100px;
 }
 
+#testsModel{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: white;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 20%;
+    z-index: 6;
+    left: 100px;
+}
+#testsCity{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: black;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 22px;
+    z-index: 6;
+    left: 100px;
+}
+
+/*.models::before{*/
+    /*content: '';*/
+/*}*/
+/*.models::after{*/
+    /*display: inline-block;*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*margin-left: .255em;*/
+    /*vertical-align: .255em;*/
+    /*content: "";*/
+    /*border-top: .3em solid;*/
+    /*border-right: .3em solid transparent;*/
+    /*border-bottom: 0;*/
+    /*border-left: .3em solid transparent;*/
+/*}*/
 #nav{
     height: 56px;
 }
 
 a {
     color: black;
+}
+
+#allBrandsDropdown{
+    width: 150px;
+    height: 38px;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
 }

@@ -26,7 +26,6 @@ public class UserService extends AbstractService<UserDTO, Users, Long> {
 
     @Override
     public void save(Users user) {
-        try {
             if(!Objects.isNull(user)
                     && !Objects.isNull(user.getName())
                     && !Objects.isNull(user.getEmail())
@@ -37,15 +36,17 @@ public class UserService extends AbstractService<UserDTO, Users, Long> {
             }else {
                 throw new ShafagException("user cannot be added");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
 
     }
 
     @Override
     public UserDTO getById(Long id) {
         return mapper.getById(id);
+    }
+
+    @Override
+    public Set<UserDTO> getAllActive() {
+        return mapper.getAll();
     }
 
     public Users getByUsername(String username){
@@ -58,7 +59,7 @@ public class UserService extends AbstractService<UserDTO, Users, Long> {
     }
 
     @Override
-    public Set<UserDTO> getAll(SearchDTO searchDTO) {
+    public Set<UserDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 

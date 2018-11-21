@@ -26,15 +26,13 @@ public class DifferentialService extends AbstractService<DiferentialDTO, Differe
 
     @Override
     public void save(Differential differential) {
-        try{
+
             if(!Objects.isNull(differential) && !Objects.isNull(differential.getName())){
                 repository.save(differential);
             }else{
                 throw new ShafagException("differantial cannot be added ");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
+
 
     }
 
@@ -44,12 +42,17 @@ public class DifferentialService extends AbstractService<DiferentialDTO, Differe
     }
 
     @Override
+    public Set<DiferentialDTO> getAllActive() {
+        return null;
+    }
+
+    @Override
     public Set<DiferentialDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<DiferentialDTO> getAll(SearchDTO searchDTO) {
+    public Set<DiferentialDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 

@@ -29,6 +29,7 @@ public class BodyTypeController {
 
     @GetMapping("/{id}")
     public BodyTypeDTO getById(@PathVariable Long id){
+        System.out.println("~~~~~~~~~~~~~" + id + "~~~~~~~~~~~~~");
         return bodyTypeService.getById(id);
 
     }

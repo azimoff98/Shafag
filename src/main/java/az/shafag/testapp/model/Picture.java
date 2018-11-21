@@ -20,7 +20,7 @@ public class Picture {
     @Column(name = "is_active")
     private Integer isActive;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "vehicle_id")
     private Vehicle vehicle;
 

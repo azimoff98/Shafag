@@ -31,15 +31,12 @@ public class RoleService extends AbstractService<RoleDTO, Role, Long> {
 
     @Override
     public void save(Role role) {
-        try{
+
             if(!Objects.isNull(role) && !Objects.isNull(role.getLabel())){
                 repository.save(role);
             }else{
                 throw new ShafagException("role cannot be added");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
 
     }
 
@@ -49,12 +46,17 @@ public class RoleService extends AbstractService<RoleDTO, Role, Long> {
     }
 
     @Override
+    public Set<RoleDTO> getAllActive() {
+        return mapper.getAll();
+    }
+
+    @Override
     public Set<RoleDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<RoleDTO> getAll(SearchDTO searchDTO) {
+    public Set<RoleDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 

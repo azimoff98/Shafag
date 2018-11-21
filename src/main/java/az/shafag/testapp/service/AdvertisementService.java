@@ -24,35 +24,37 @@ public class AdvertisementService extends AbstractService<AdvertisementDTO, Adve
     private AdvertisementMapper mapper;
 
 
-
     @Override
     public void save(Advertisement advertisement) {
 
         String key = generateKey();
         advertisement.setKey(key);
-        try {
-            if(!Objects.isNull(advertisement)
-                    && !Objects.isNull(advertisement.getPrice())
-                    && !Objects.isNull(advertisement.getCity())
-                    && !Objects.isNull(advertisement.getCurrency())
-                    && !Objects.isNull(advertisement.getOwner())
-                    && !Objects.isNull(advertisement.getApplier())
-                    && !Objects.isNull(advertisement.getVehicle())){
-                repository.save(advertisement);
-            }
-            else {
-               throw new ShafagException("this advertisement cannot be saved");
-            }
-        }catch (ShafagException e){
-            e.getMessage();
+
+        if (!Objects.isNull(advertisement)
+                && !Objects.isNull(advertisement.getPrice())
+                && !Objects.isNull(advertisement.getCity())
+                && !Objects.isNull(advertisement.getCurrency())
+                && !Objects.isNull(advertisement.getOwner())
+                && !Objects.isNull(advertisement.getApplier())
+                && !Objects.isNull(advertisement.getVehicle())) {
+            repository.save(advertisement);
+        } else {
+            throw new ShafagException("this advertisement cannot be saved");
         }
 
     }
+
 
     @Override
     public AdvertisementDTO getById(Long id) {
         return mapper.getById(id);
     }
+
+    @Override
+    public Set<AdvertisementDTO> getAllActive() {
+        return mapper.getAllActive();
+    }
+
 
     @Override
     public Set<AdvertisementDTO> getAll() {
@@ -61,27 +63,34 @@ public class AdvertisementService extends AbstractService<AdvertisementDTO, Adve
 
     @Override
     @ServiceMethod
-    public Set<AdvertisementDTO> getAll(SearchDTO searchDTO) {
+    public Set<AdvertisementDTO> getAllByFilter(SearchDTO searchDTO) {
+
         return mapper.getAllByFilter(searchDTO);
     }
+
+
 
     //ONLY PRIVILEGED USERS CAN DELETE BY ID
     @Override
     public void delete(Long id) {
         repository.deleteById(id);
+
     }
 
     //Only owner of an advertisement can delete by matching key
-    public void delete(Long id,String key){
-        try{
+    public String delete(Long id,String key){
+
             if(!Objects.isNull(key) && getById(id).getKey().equals(key)){
                 mapper.deleteByKey(key);
             }else{
                 throw new ShafagException("key is not matching...");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
+
+            StringBuilder sb = new StringBuilder();
+            sb.append("Advertisement with id: ").append(id).append("was deleted successfully...");
+
+            return sb.toString();
+
     }
 
     private String generateKey(){

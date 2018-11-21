@@ -29,15 +29,12 @@ public class CityService extends AbstractService<CityDTO, City, Long >{
 
     @Override
     public void save(City city) {
-        try{
+
             if(!Objects.isNull(city) && !Objects.isNull(city.getName())){
                 repository.save(city);
             }else{
                 throw new ShafagException("city cannot be added");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
 
     }
 
@@ -47,13 +44,18 @@ public class CityService extends AbstractService<CityDTO, City, Long >{
     }
 
     @Override
+    public Set<CityDTO> getAllActive() {
+        return mapper.getAllActive();
+    }
+
+    @Override
     @ServiceMethod
     public Set<CityDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<CityDTO> getAll(SearchDTO searchDTO) {
+    public Set<CityDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 

@@ -2,6 +2,7 @@ package az.shafag.testapp.controller;
 
 import az.shafag.testapp.dto.FuelTypeDTO;
 import az.shafag.testapp.model.FuelType;
+import az.shafag.testapp.service.FuelTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,14 +10,14 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/fuelType")
-public class FuelTypeService {
+public class FuelTypeController {
 
 
     @Autowired
     private FuelTypeService fuelTypeService;
 
 
-    @PostMapping
+    @PostMapping("/save")
     public void save(@RequestBody FuelType fuelType){
         fuelTypeService.save(fuelType);
     }
@@ -33,7 +34,7 @@ public class FuelTypeService {
 
     @DeleteMapping("/{id}")
     public void deleteById(@PathVariable Long id){
-        fuelTypeService.deleteById(id);
+        fuelTypeService.delete(id);
     }
 
 }

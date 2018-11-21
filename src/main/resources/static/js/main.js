@@ -5,6 +5,7 @@ $(document).ready(function () {
     getBodyType();
     getColor();
     getdiferentials();
+    getgearboxes();
 })
 
 // var def_callback = function (d) {
@@ -24,15 +25,15 @@ var getCities = function () {
 }
 
 var city_callback = function (d) {
-    console.log(d);
+    // console.log(d);
     var list = d;
     var s = '';
     list.forEach(function (city) {
-        s = s.concat('<a class="dropdown-item" href="#">' + city.name + '</a>');
+        s = s.concat('<option class="majors">' + city.name + '</option>');
     })
-    s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
+    //s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
     console.log(s);
-    $('#allCitiesDropDown').append(s);
+    $('#allCities').append(s);
 }
 //--------------------------------------------------------
 
@@ -42,14 +43,15 @@ var getBrands = function () {
 }
 
 var brand_callback = function (d) {
-    console.log(d);
+    //console.log(d);
     var list = d;
     var s = '';
     list.forEach(function (brand) {
-        s = s.concat('<a class="dropdown-item" href="#">' + brand.name + '</a>');
-    })
-    s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
-    console.log(s);
+
+        s = s.concat('<option class="majors">' + brand.name + '</option>');
+    });
+    // s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
+    //console.log(s);
     $('#allBrandsDropdown').append(s);
 }
 
@@ -66,10 +68,12 @@ var model_callback = function (d) {
     var list = d;
     var s = '';
     list.forEach(function (model) {
-        s = s.concat('<a class="dropdown-item" href="#">' + model.name + '</a>');
-    })
-    s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
+        s = s.concat('<option class="majors">'  + model.name + '</option>');
+    });
+    //s = '<div class="dropdown-menu">'.concat(s).concat('</div>');
+
     console.log(s);
+
     $('#allModels').append(s);
 }
 //---------------------------------------------------------
@@ -82,15 +86,15 @@ var getBodyType = function () {
 }
 
 var bodyType_callback = function (d) {
-    console.log(d);
+   // console.log(d);
     var list = d;
     var s = '';
     list.forEach(function (bodytype) {
-        s = s.concat('<a class="dropdown-item" href="#">' + bodytype.name + '</a>');
+        s = s.concat('<option class="majors">' + bodytype.name + '</option>');
     })
-    s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
-    console.log(s);
-    $('#allbodytype').append(s);
+    //s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
+  //  console.log(s);
+    $('#allBodyType').append(s);
 }
 
 //----------------------------------------------------------------
@@ -102,15 +106,15 @@ var getColor = function () {
 }
 
 var color_callback = function (d) {
-    console.log(d);
+   // console.log(d);
     var list = d;
     var s = '';
     list.forEach(function (color) {
-        s = s.concat('<a class="dropdown-item" href="#">' + color.name + '</a>');
+        s = s.concat('<option class="majors">' + color.name + '</option>');
     })
-    s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
-    console.log(s);
-    $('#allcolor').append(s);
+    //s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
+   // console.log(s);
+    $('#allColors').append(s);
 }
 
 
@@ -124,19 +128,60 @@ var getdiferentials = function () {
 
 
 var diferentials_callback = function (d) {
-    console.log(d);
+   // console.log(d);
     var list = d;
     var s = '';
     list.forEach(function (diferentials) {
-        s = s.concat('<a class="dropdown-item" href="#">' + diferentials.name + '</a>');
-    })
-    s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
-    console.log(s);
-    $('#alldiferentials').append(s);
+        s = s.concat('<option class="majors">' + diferentials.name + '</option>');
+    });
+    //s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
+   // console.log(s);
+    $('#allDiferentials').append(s);
 }
 
 
+//----------------------------------------------
 
+var getgearboxes = function () {
+    var url = urls.getAllGearboxesUrl;
+    utility.get(url, gearboxes_callback);
+}
+
+
+var gearboxes_callback = function (d) {
+   // console.log(d);
+    var list = d;
+    var s = '';
+    list.forEach(function (gearboxes) {
+        s = s.concat('<option class="majors">' + gearboxes.name + '</option>');
+    });
+    //s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
+   // console.log(s);
+    $('#allGearboxes').append(s);
+}
+
+//------------------------------------------------------------------------
+
+
+//
+// var getDiferential = function () {
+//     var url = urls.getAllBrandsUrl;
+//     utility.get(url, brand_callback);
+// }
+//
+// var diferential_callback = function (d) {
+//     //console.log(d);
+//     var list = d;
+//     var s = '';
+//     list.forEach(function (diferential) {
+//
+//         s = s.concat('<option class="majors">' + diferential.name + '</option>');
+//     });
+//     // s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
+//     //console.log(s);
+//     $('#allBrandsDropdown').append(s);
+// }
+//
 
 
 

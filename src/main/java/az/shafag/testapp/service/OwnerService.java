@@ -25,7 +25,7 @@ public class OwnerService extends AbstractService<OwnerDTO, Owner, Long> {
 
     @Override
     public void save(Owner owner) {
-        try{
+
             if(!Objects.isNull(owner)
                     && !Objects.isNull(owner.getName())
                     && !Objects.isNull(owner.getEmail())
@@ -34,9 +34,6 @@ public class OwnerService extends AbstractService<OwnerDTO, Owner, Long> {
             }else{
                 throw new ShafagException("user cannot be added");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
 
     }
 
@@ -46,12 +43,17 @@ public class OwnerService extends AbstractService<OwnerDTO, Owner, Long> {
     }
 
     @Override
+    public Set<OwnerDTO> getAllActive() {
+        return mapper.getAllActive();
+    }
+
+    @Override
     public Set<OwnerDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<OwnerDTO> getAll(SearchDTO searchDTO) {
+    public Set<OwnerDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 

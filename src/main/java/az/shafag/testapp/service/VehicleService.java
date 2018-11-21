@@ -27,7 +27,6 @@ public class VehicleService extends AbstractService<VehicleDTO,Vehicle,Long>{
 
     @Override
     public void save(Vehicle vehicle) {
-        try{
             if(!Objects.isNull(vehicle)
                     && !Objects.isNull(vehicle.getBrand())
                     && !Objects.isNull(vehicle.getModel())
@@ -46,9 +45,7 @@ public class VehicleService extends AbstractService<VehicleDTO,Vehicle,Long>{
             }else {
                 throw new ShafagException("vehicle cannot be added");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
+
 
     }
 
@@ -58,12 +55,17 @@ public class VehicleService extends AbstractService<VehicleDTO,Vehicle,Long>{
     }
 
     @Override
+    public Set<VehicleDTO> getAllActive() {
+        return mapper.getAllActive();
+    }
+
+    @Override
     public Set<VehicleDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<VehicleDTO> getAll(SearchDTO searchDTO) {
+    public Set<VehicleDTO> getAllByFilter(SearchDTO searchDTO) {
         return mapper.getAllActive();
     }
 

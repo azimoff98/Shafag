@@ -27,15 +27,13 @@ public class ModelService extends AbstractService<ModelDTO, Model, Long> {
 
     @Override
     public void save(Model model) {
-        try {
+
             if(!Objects.isNull(model) && !Objects.isNull(model.getName())){
                 repository.save(model);
             }else{
                 throw new ShafagException("model cannot be added");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
+
     }
 
     @Override
@@ -44,12 +42,17 @@ public class ModelService extends AbstractService<ModelDTO, Model, Long> {
     }
 
     @Override
+    public Set<ModelDTO> getAllActive() {
+        return mapper.getAllActive();
+    }
+
+    @Override
     public Set<ModelDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<ModelDTO> getAll(SearchDTO searchDTO) {
+    public Set<ModelDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 

@@ -24,15 +24,12 @@ public class GearBoxService extends AbstractService<GearBoxDTO, GearBox, Long> {
 
     @Override
     public void save(GearBox gearBox) {
-        try{
+
             if(!Objects.isNull(repository) && !Objects.isNull(gearBox.getName())){
                 repository.save(gearBox);
             }else{
                 throw new ShafagException("gearbox cannot be added");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
 
     }
 
@@ -42,12 +39,17 @@ public class GearBoxService extends AbstractService<GearBoxDTO, GearBox, Long> {
     }
 
     @Override
+    public Set<GearBoxDTO> getAllActive() {
+        return mapper.getAllActive();
+    }
+
+    @Override
     public Set<GearBoxDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<GearBoxDTO> getAll(SearchDTO searchDTO) {
+    public Set<GearBoxDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 

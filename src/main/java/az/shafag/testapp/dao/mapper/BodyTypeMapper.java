@@ -10,7 +10,7 @@ import java.util.Set;
 public interface BodyTypeMapper {
 
 
-    @Select("select * from shefeq.body_type where id=#{id} and is_active = 1")
+    @Select("select * from shefeq.body_type where id=#{id}")
     BodyTypeDTO getById(Long id);
 
     @Select("select * from shefeq.body_type")

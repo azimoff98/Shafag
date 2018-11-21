@@ -26,15 +26,13 @@ public class BrandService extends AbstractService<BrandDTO, Brand, Long> {
 
     @Override
     public void save(Brand brand) {
-        try{
+
             if(!Objects.isNull(brand) && !Objects.isNull(brand.getName())){
                 repository.save(brand);
             }else{
                 throw new ShafagException("Brand cannot be added");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
+
 
     }
 
@@ -44,12 +42,17 @@ public class BrandService extends AbstractService<BrandDTO, Brand, Long> {
     }
 
     @Override
+    public Set<BrandDTO> getAllActive() {
+        return mapper.getAllActive();
+    }
+
+    @Override
     public Set<BrandDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<BrandDTO> getAll(SearchDTO searchDTO) {
+    public Set<BrandDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 

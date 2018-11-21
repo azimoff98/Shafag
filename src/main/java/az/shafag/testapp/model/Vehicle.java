@@ -20,7 +20,7 @@ public class Vehicle {
     @JoinColumn(name = "brand_id")
     private Brand brand;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "model_id")
     private Model model;
 
@@ -30,22 +30,22 @@ public class Vehicle {
     @Column(name = "millage")
     private Integer millage;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "gearbox_id")
     private GearBox gearBox;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "differential_id")
     private Differential differential;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "color_id")
     private Color color;
 
     @Column(name = "new")
     private Long isNew;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "fuel_type_id")
     private FuelType fuelType;
 
@@ -54,7 +54,7 @@ public class Vehicle {
 
     private Integer engine;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "body_type_id")
     private BodyType bodyType;
 

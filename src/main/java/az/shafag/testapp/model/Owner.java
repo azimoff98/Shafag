@@ -1,6 +1,7 @@
 package az.shafag.testapp.model;
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -30,7 +31,7 @@ public class    Owner {
     @Column(name = "phone_number1")
     private String phoneNumber1;
 
-
+    @JsonManagedReference
     @OneToMany(fetch = FetchType.EAGER, orphanRemoval = true, mappedBy = "owner")
     private Set<Advertisement> adds;
 

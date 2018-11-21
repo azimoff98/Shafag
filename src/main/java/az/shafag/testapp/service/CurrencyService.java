@@ -27,15 +27,12 @@ public class CurrencyService extends AbstractService<CurrencyDTO, Currency, Long
 
     @Override
     public void save(Currency currency) {
-        try{
+
             if(!Objects.isNull(currency) && !Objects.isNull(currency.getName())){
                 repository.save(currency);
-            }else{
+            }else {
                 throw new ShafagException("currency cannot be added");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
 
     }
 
@@ -45,12 +42,17 @@ public class CurrencyService extends AbstractService<CurrencyDTO, Currency, Long
     }
 
     @Override
+    public Set<CurrencyDTO> getAllActive() {
+        return mapper.getAllActive();
+    }
+
+    @Override
     public Set<CurrencyDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<CurrencyDTO> getAll(SearchDTO searchDTO) {
+    public Set<CurrencyDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 

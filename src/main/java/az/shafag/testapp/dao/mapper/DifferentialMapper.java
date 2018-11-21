@@ -10,13 +10,13 @@ import java.util.Set;
 @Mapper
 public interface DifferentialMapper {
 
-    @Select("select * from shefeq.brands where id=#{id} and is_active = 1")
+    @Select("select * from shefeq.differential where id=#{id} and is_active = 1")
     DiferentialDTO getById(Long id);
 
-    @Select("select * from shefeq.brands")
+    @Select("select * from shefeq.differential")
     Set<DiferentialDTO> getAll();
 
-    @Select("select * from shefeq.brands where isActive = 1")
+    @Select("select * from shefeq.differential where isActive = 1")
     Set<DiferentialDTO> getAllActive();
 
 }

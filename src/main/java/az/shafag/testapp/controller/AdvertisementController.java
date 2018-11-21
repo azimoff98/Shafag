@@ -18,9 +18,15 @@ public class AdvertisementController {
     private AdvertisementService advertisementService;
 
 
+    @GetMapping("/all-actives")
+    public Set<AdvertisementDTO> getAllActive(){
+       return advertisementService.getAllActive();
+    }
+
     @GetMapping("/all")
     public Set<AdvertisementDTO> getAll(){
-       return advertisementService.getAll();
+        return advertisementService.getAll();
+
     }
 
     @GetMapping("/{id}")
@@ -28,7 +34,7 @@ public class AdvertisementController {
         return advertisementService.getById(id);
     }
 
-    @PostMapping
+    @PostMapping("/save")
     public void save(@RequestBody Advertisement advertisement){
         advertisementService.save(advertisement);
     }
@@ -41,12 +47,14 @@ public class AdvertisementController {
     }
 
 
-//    //DELETE ENDPOINT FOR OWNER
-//    @PostMapping
-//    public void deleteById(@RequestBody Matcher matcher){
-//        advertisementService.delete(matcher.getId(), matcher.getKey());
-//
-//    }
+    //DELETE ENDPOINT FOR OWNER
+    @PostMapping("/owner-delete")
+    public void deleteById(@RequestBody Matcher matcher){
+        advertisementService.delete(matcher.getId(), matcher.getKey());
+
+    }
+
+
 
 
 

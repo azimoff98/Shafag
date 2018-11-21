@@ -26,15 +26,13 @@ public class ColorService  extends AbstractService<ColorDTO, Color, Long>{
 
     @Override
     public void save(Color color) {
-        try{
+
             if(!Objects.isNull(color) && !Objects.isNull(color.getName())){
                 repository.save(color);
             }else{
                 throw new ShafagException("color cannot be added");
             }
-        }catch (ShafagException e){
-            e.getMessage();
-        }
+
     }
 
     @Override
@@ -43,12 +41,17 @@ public class ColorService  extends AbstractService<ColorDTO, Color, Long>{
     }
 
     @Override
+    public Set<ColorDTO> getAllActive() {
+        return null;
+    }
+
+    @Override
     public Set<ColorDTO> getAll() {
         return mapper.getAll();
     }
 
     @Override
-    public Set<ColorDTO> getAll(SearchDTO searchDTO) {
+    public Set<ColorDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 

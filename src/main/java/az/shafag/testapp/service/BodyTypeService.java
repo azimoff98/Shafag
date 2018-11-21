@@ -25,25 +25,25 @@ public class BodyTypeService extends AbstractService<BodyTypeDTO, BodyType, Long
     private BodyTypeMapper mapper;
 
 
-
     @Override
     public void save(BodyType bodyType) {
-        try{
-            if(!Objects.isNull(bodyType) && !Objects.isNull(bodyType.getName())){
-                repository.save(bodyType);
-            }else{
-                throw new ShafagException("BodyType cannot be added");
-            }
-        }catch (ShafagException e){
-            e.getMessage();
+
+        if (!Objects.isNull(bodyType) && !Objects.isNull(bodyType.getName())) {
+            repository.save(bodyType);
+        } else {
+            throw new ShafagException("BodyType cannot be added");
         }
-
-
     }
+
 
     @Override
     public BodyTypeDTO getById(Long id) {
         return mapper.getById(id);
+    }
+
+    @Override
+    public Set<BodyTypeDTO> getAllActive() {
+        return mapper.getAllActive();
     }
 
     @Override
@@ -52,7 +52,7 @@ public class BodyTypeService extends AbstractService<BodyTypeDTO, BodyType, Long
     }
 
     @Override
-    public Set<BodyTypeDTO> getAll(SearchDTO searchDTO) {
+    public Set<BodyTypeDTO> getAllByFilter(SearchDTO searchDTO) {
         return null;
     }
 
