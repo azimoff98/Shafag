@@ -36,6 +36,8 @@ public class AdvertisementController {
 
     @PostMapping("/save")
     public void save(@RequestBody Advertisement advertisement){
+
+
         advertisementService.save(advertisement);
     }
 

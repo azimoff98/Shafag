@@ -68,6 +68,10 @@ public class Vehicle {
     private Set<Specification> specifications;
 
 
+    @OneToMany(mappedBy = "vehcile")
+    private Set<File> files;
+
+
     public Vehicle() {
     }
 
@@ -83,7 +87,8 @@ public class Vehicle {
                    Integer horsePower,
                    Integer engine,
                    BodyType bodyType,
-                   Set<Specification> specifications) {
+                   Set<Specification> specifications,
+                   Set<File> files) {
         this.brand = brand;
         this.model = model;
         this.year = year;
@@ -97,6 +102,7 @@ public class Vehicle {
         this.engine = engine;
         this.bodyType = bodyType;
         this.specifications = specifications;
+        this.files = files;
     }
 
     public Long getId() {
@@ -209,5 +215,13 @@ public class Vehicle {
 
     public void setSpecifications(Set<Specification> specifications) {
         this.specifications = specifications;
+    }
+
+    public Set<File> getFiles() {
+        return files;
+    }
+
+    public void setFiles(Set<File> files) {
+        this.files = files;
     }
 }
