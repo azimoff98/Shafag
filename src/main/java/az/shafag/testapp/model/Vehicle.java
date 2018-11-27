@@ -210,4 +210,26 @@ public class Vehicle {
     public void setSpecifications(Set<Specification> specifications) {
         this.specifications = specifications;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "Id=" + Id +
+                ", brand=" + brand +
+                ", model=" + model +
+                ", year=" + year +
+                ", millage=" + millage +
+                ", gearBox=" + gearBox +
+                ", differential=" + differential +
+                ", color=" + color +
+                ", isNew=" + isNew +
+                ", fuelType=" + fuelType +
+                ", horsePower=" + horsePower +
+                ", engine=" + engine +
+                ", bodyType=" + bodyType +
+                ", specifications=" + specifications +
+                '}';
+    }
 }
+
+

@@ -64,4 +64,14 @@ public class Color {
     public void setVehicles(Set<Vehicle> vehicles) {
         this.vehicles = vehicles;
     }
+
+    @Override
+    public String toString() {
+        return "Color{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", label='" + label + '\'' +
+                ", vehicles=" + vehicles +
+                '}';
+    }
 }

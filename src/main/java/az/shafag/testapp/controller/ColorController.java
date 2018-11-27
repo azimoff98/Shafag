@@ -20,7 +20,7 @@ public class ColorController {
         colorService.save(color);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<ColorDTO> getAll(){
         return colorService.getAll();
     }

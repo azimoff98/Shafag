@@ -22,7 +22,7 @@ public class FuelTypeController {
         fuelTypeService.save(fuelType);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<FuelTypeDTO> getAll(){
         return fuelTypeService.getAll();
     }

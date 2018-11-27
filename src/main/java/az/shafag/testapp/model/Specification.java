@@ -75,4 +75,15 @@ public class Specification {
     public void setVehicles(Set<Vehicle> vehicles) {
         this.vehicles = vehicles;
     }
+
+    @Override
+    public String toString() {
+        return "Specification{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", label='" + label + '\'' +
+                ", isActive=" + isActive +
+                ", vehicles=" + vehicles +
+                '}';
+    }
 }

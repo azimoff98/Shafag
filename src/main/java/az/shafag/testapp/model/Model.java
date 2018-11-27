@@ -1,6 +1,5 @@
 package az.shafag.testapp.model;
 
-import lombok.Data;
 
 import javax.persistence.*;
 
@@ -75,5 +74,16 @@ public class Model {
 
     public void setIsActive(Integer isActive) {
         this.isActive = isActive;
+    }
+
+    @Override
+    public String toString() {
+        return "Model{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", label='" + label + '\'' +
+                ", brand=" + brand +
+                ", isActive=" + isActive +
+                '}';
     }
 }

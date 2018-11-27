@@ -77,4 +77,15 @@ public class Differential {
     public void setVehicles(Set<Vehicle> vehicles) {
         this.vehicles = vehicles;
     }
+
+    @Override
+    public String toString() {
+        return "Differential{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", label='" + label + '\'' +
+                ", isActive=" + isActive +
+                ", vehicles=" + vehicles +
+                '}';
+    }
 }

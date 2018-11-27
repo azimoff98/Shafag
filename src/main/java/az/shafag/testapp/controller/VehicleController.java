@@ -21,7 +21,7 @@ public class VehicleController {
         vehicleService.save(vehicle);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<VehicleDTO> getAll(){
        return vehicleService.getAll();
     }

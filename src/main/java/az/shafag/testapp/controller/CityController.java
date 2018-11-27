@@ -20,7 +20,7 @@ public class CityController {
         cityService.save(city);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<CityDTO> getAll(){
        return cityService.getAll();
     }

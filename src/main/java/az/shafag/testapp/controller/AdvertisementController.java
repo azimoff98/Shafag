@@ -5,6 +5,8 @@ import az.shafag.testapp.dto.AdvertisementDTO;
 import az.shafag.testapp.model.Advertisement;
 import az.shafag.testapp.model.wrapper.Matcher;
 import az.shafag.testapp.service.AdvertisementService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +15,9 @@ import java.util.Set;
 @RestController
 @RequestMapping("/ads")
 public class AdvertisementController {
+
+    private final static Logger log = LoggerFactory.getLogger(AdvertisementController.class);
+
 
     @Autowired
     private AdvertisementService advertisementService;
@@ -23,7 +28,7 @@ public class AdvertisementController {
        return advertisementService.getAllActive();
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<AdvertisementDTO> getAll(){
         return advertisementService.getAll();
 
@@ -37,6 +42,11 @@ public class AdvertisementController {
     @PostMapping("/save")
     public void save(@RequestBody Advertisement advertisement){
         advertisementService.save(advertisement);
+
+        log.info("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        log.info("Advertisement is successfully saved: " + advertisement.toString());
+        log.info("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
     }
 
 

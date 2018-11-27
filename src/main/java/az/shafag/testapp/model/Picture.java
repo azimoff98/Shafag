@@ -64,4 +64,14 @@ public class Picture {
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
+
+    @Override
+    public String toString() {
+        return "Picture{" +
+                "id=" + id +
+                ", path='" + path + '\'' +
+                ", isActive=" + isActive +
+                ", vehicle=" + vehicle +
+                '}';
+    }
 }

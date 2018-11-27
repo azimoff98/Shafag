@@ -102,4 +102,17 @@ public class    Owner {
     public void setAdds(Set<Advertisement> adds) {
         this.adds = adds;
     }
+
+    @Override
+    public String toString() {
+        return "Owner{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", isActive=" + isActive +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", phoneNumber1='" + phoneNumber1 + '\'' +
+                ", adds=" + adds +
+                '}';
+    }
 }

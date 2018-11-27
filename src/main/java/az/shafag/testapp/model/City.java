@@ -76,4 +76,15 @@ public class City {
     public void setAdvertisements(Set<Advertisement> advertisements) {
         this.advertisements = advertisements;
     }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", label='" + label + '\'' +
+                ", isActive=" + isActive +
+                ", advertisements=" + advertisements +
+                '}';
+    }
 }

@@ -21,7 +21,7 @@ public class RoleController {
         roleService.save(role);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<RoleDTO> getAll(){
         return roleService.getAll();
     }

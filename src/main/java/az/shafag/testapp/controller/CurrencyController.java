@@ -20,7 +20,7 @@ public class CurrencyController {
         currencyService.save(currency);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<CurrencyDTO> getAll(){
         return currencyService.getAll();
     }

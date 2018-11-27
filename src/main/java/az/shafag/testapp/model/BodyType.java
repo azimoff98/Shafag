@@ -74,4 +74,16 @@ public class BodyType {
     public void setVehicles(Set<Vehicle> vehicles) {
         this.vehicles = vehicles;
     }
+
+
+    @Override
+    public String toString() {
+        return "BodyType{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", label='" + label + '\'' +
+                ", isActive=" + isActive +
+                ", vehicles=" + vehicles +
+                '}';
+    }
 }

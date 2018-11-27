@@ -20,7 +20,7 @@ public class DifferentialController {
         differentialService.save(differential);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<DiferentialDTO> getAll(){
         return differentialService.getAll();
     }

@@ -64,4 +64,15 @@ public class Currency {
     public void setIsActive(Integer isActive) {
         this.isActive = isActive;
     }
+
+    @Override
+    public String
+    toString() {
+        return "Currency{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", label='" + label + '\'' +
+                ", isActive=" + isActive +
+                '}';
+    }
 }

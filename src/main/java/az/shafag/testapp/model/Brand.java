@@ -27,7 +27,6 @@ public class Brand {
     private Integer isActive;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "brand")
-    @Fetch(FetchMode.JOIN)
     private Set<Model> models;
 
 
@@ -79,6 +78,17 @@ public class Brand {
 
     public void setModels(Set<Model> models) {
         this.models = models;
+    }
+
+    @Override
+    public String toString() {
+        return "Brand{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", label='" + label + '\'' +
+                ", isActive=" + isActive +
+                ", models=" + models +
+                '}';
     }
 }
 

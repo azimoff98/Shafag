@@ -123,4 +123,18 @@ public class Users {
     public void setAdds(Set<Advertisement> adds) {
         this.adds = adds;
     }
+
+    @Override
+    public String toString() {
+        return "Users{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", isActive=" + isActive +
+                ", password='" + password + '\'' +
+                ", role=" + role +
+                ", adds=" + adds +
+                '}';
+    }
 }

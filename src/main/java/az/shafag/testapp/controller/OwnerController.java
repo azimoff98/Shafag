@@ -23,7 +23,7 @@ public class OwnerController {
         ownerService.save(owner);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<OwnerDTO> getAll(){
         return ownerService.getAll();
     }

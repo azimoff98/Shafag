@@ -10,6 +10,16 @@ sup {
 button {
     width: 148px;
 }
+
+/*#testsCity1{*/
+    /*width: 569px;*/
+    /*height: 31px;*/
+/*}*/
+
+#year{
+    width: 148px;
+    height: 31px;
+}
 #dropdownMenu55{
     width: 148px;
     height: 45px;
@@ -63,7 +73,241 @@ button {
     height: 38px;
 }
 
-#dropdownMenu66{
-    width: 563px;
+#allCities{
+    width: 400px;
     height: 38px;
+}
+
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+}
+
+#testsCity1{
+    width: 0;
+    height: 0;
+    margin-left: 280px;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: black;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 22px;
+    z-index: 6;
+    left: 100px;
+}
+
+#testsCity{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: black;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 22px;
+    z-index: 6;
+    left: 100px;
+}
+#allBrandsDropdown{
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #f8f9fa;
+}
+.dropdown-toggle{
+    width: 148px;
+}
+
+
+#testsCity{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: black;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 22px;
+    z-index: 6;
+    left: 100px;
+}
+#allBrandsDropdown{
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #f8f9fa;
+}
+
+#testsFuel{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: black;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 22px;
+    z-index: 6;
+    left: 100px;
+}
+
+
+#allModels{
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #f8f9fa;
+}
+
+
+#testsModel{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: black;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 21px;
+    z-index: 6;
+    left: 100px;
+}
+
+#allDiferential{
+
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #f8f9fa;
+}
+
+#testsDiferential{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: black;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 22px;
+    z-index: 6;
+    left: 100px;
+}
+
+#allBodyType{
+
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #f8f9fa;
+}
+
+#testsBodyType{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: black;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 22px;
+    z-index: 6;
+    left: 100px;
+}
+
+#allDiferentials{
+
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #f8f9fa;
+}
+
+#testsDiferential{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: black;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 22px;
+    z-index: 6;
+    left: 100px;
+}
+
+#allColors{
+
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #f8f9fa;
+}
+
+#testsColor{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: black;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 22px;
+    z-index: 6;
+    left: 100px;
+}
+
+
+#allGearboxes{
+
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #f8f9fa;
+}
+
+#testsGearbox{
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    color: black;
+    position: relative;
+    border-left: .3em solid transparent;
+    top: 22px;
+    z-index: 6;
+    left: 100px;
 }

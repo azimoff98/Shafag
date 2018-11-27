@@ -220,4 +220,25 @@ public class Advertisement {
     public void setApplier(Users applier) {
         this.applier = applier;
     }
+
+    @Override
+    public String toString() {
+        return "Advertisement{" +
+                "id=" + id +
+                ", key='" + key + '\'' +
+                ", vehicle=" + vehicle +
+                ", city=" + city +
+                ", currency=" + currency +
+                ", date=" + date +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", lastUpdate=" + lastUpdate +
+                ", label='" + label + '\'' +
+                ", seenCount=" + seenCount +
+                ", status=" + status +
+                ", isActive=" + isActive +
+                ", owner=" + owner +
+                ", applier=" + applier +
+                '}';
+    }
 }

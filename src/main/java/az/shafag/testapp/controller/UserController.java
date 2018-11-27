@@ -20,7 +20,7 @@ public class UserController {
         userService.save(users);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<UserDTO> getAll(){
         return userService.getAll();
     }

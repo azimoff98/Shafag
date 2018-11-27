@@ -22,7 +22,7 @@ public class BodyTypeController {
         bodyTypeService.save(bodyType);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<BodyTypeDTO> getAll(){
         return bodyTypeService.getAll();
     }

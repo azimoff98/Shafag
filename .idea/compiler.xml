@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Shafag" />
         <module name="Shafag1" />
+        <module name="Shafag3" />
         <module name="shafag_auto" />
         <module name="Shafagt" />
       </profile>

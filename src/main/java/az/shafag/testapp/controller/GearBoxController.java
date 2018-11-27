@@ -21,7 +21,7 @@ public class GearBoxController {
         gearBoxService.save(gearBox);
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public Set<GearBoxDTO> getAll(){
         return gearBoxService.getAll();
     }
