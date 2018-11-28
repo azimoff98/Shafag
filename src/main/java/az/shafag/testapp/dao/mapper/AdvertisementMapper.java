@@ -3,6 +3,7 @@ package az.shafag.testapp.dao.mapper;
 
 import az.shafag.testapp.dao.provider.AdvertisementProvider;
 import az.shafag.testapp.dto.*;
+import az.shafag.testapp.model.Vehicle;
 import org.apache.ibatis.annotations.*;
 
 import java.util.Date;
@@ -34,7 +35,7 @@ public interface AdvertisementMapper {
             @Result(property = "userDTO", column = "applier_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.UserMapper.getById"), javaType = UserDTO.class),
             @Result(property = "vehicleDTO", column = "vehicle_id",
-                    many = @Many(select = "az.shafag.testapp.dao.mapper.VehicleMapper.getById"))
+                    many = @Many(select = "az.shafag.testapp.dao.mapper.VehicleMapper.getById"), javaType = VehicleDTO.class)
         }
     )
     @Select("select * from advertisement where id=#{id} and is_active=1")
@@ -61,7 +62,7 @@ public interface AdvertisementMapper {
             @Result(property = "userDTO", column = "applier_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.UserMapper.getById"), javaType = UserDTO.class),
             @Result(property = "vehicleDTO", column = "vehicle_id",
-                    many = @Many(select = "az.shafag.testapp.dao.mapper.VehicleMapper.getById"))
+                    many = @Many(select = "az.shafag.testapp.dao.mapper.VehicleMapper.getById"), javaType = VehicleDTO.class)
     }
     )
     @SelectProvider(type = AdvertisementProvider.class,method = "getAdvertisementsByFilter")
@@ -89,7 +90,7 @@ public interface AdvertisementMapper {
             @Result(property = "userDTO", column = "applier_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.UserMapper.getById"), javaType = UserDTO.class),
             @Result(property = "vehicleDTO", column = "vehicle_id",
-                    many = @Many(select = "az.shafag.testapp.dao.mapper.VehicleMapper.getById"))
+                    many = @Many(select = "az.shafag.testapp.dao.mapper.VehicleMapper.getById"), javaType = VehicleDTO.class)
     }
     )
     @Select("select * from advertisement")
@@ -117,7 +118,7 @@ public interface AdvertisementMapper {
             @Result(property = "userDTO", column = "applier_id",
                     many = @Many(select = "az.shafag.testapp.dao.mapper.UserMapper.getById"), javaType = UserDTO.class),
             @Result(property = "vehicleDTO", column = "vehicle_id",
-                    many = @Many(select = "az.shafag.testapp.dao.mapper.VehicleMapper.getById"))
+                    many = @Many(select = "az.shafag.testapp.dao.mapper.VehicleMapper.getById"), javaType = VehicleDTO.class)
     }
     )
     @Select("select * from advertisement where is_active=1")

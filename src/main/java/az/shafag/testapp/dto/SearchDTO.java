@@ -30,6 +30,53 @@ public class SearchDTO {
     private Integer yearTo;
     private Integer limit;
 
+    public SearchDTO() {
+    }
+
+    public SearchDTO(IdDTO brand,
+                     IdDTO model,
+                     IdDTO bodyType,
+                     IdDTO city,
+                     IdDTO color,
+                     IdDTO currency,
+                     IdDTO differential,
+                     Integer engineVolumeFrom,
+                     Integer engineVolumeTo,
+                     IdDTO fuelType,
+                     IdDTO gearBox,
+                     IdDTO owner,
+                     IdDTO applier,
+                     Set<IdDTO> specs,
+                     Integer millageFrom,
+                     Integer millageTo,
+                     Integer priceFrom,
+                     Integer priceTo,
+                     Integer yearFrom,
+                     Integer yearTo,
+                     Integer limit) {
+        this.brand = brand;
+        this.model = model;
+        this.bodyType = bodyType;
+        this.city = city;
+        this.color = color;
+        this.currency = currency;
+        this.differential = differential;
+        this.engineVolumeFrom = engineVolumeFrom;
+        this.engineVolumeTo = engineVolumeTo;
+        this.fuelType = fuelType;
+        this.gearBox = gearBox;
+        this.owner = owner;
+        this.applier = applier;
+        this.specs = specs;
+        this.millageFrom = millageFrom;
+        this.millageTo = millageTo;
+        this.priceFrom = priceFrom;
+        this.priceTo = priceTo;
+        this.yearFrom = yearFrom;
+        this.yearTo = yearTo;
+        this.limit = limit;
+    }
+
     public Integer getLimit() {
         return limit;
     }

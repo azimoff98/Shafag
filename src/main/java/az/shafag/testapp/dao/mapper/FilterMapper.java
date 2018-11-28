@@ -12,8 +12,9 @@ import static az.shafag.testapp.constant.Query.FILTER_QUERY;
 
 public interface FilterMapper {
     @Results(value = {
+
             @Result(property = "colors",column = "colors",javaType = Set.class,typeHandler = FilterItemTypeHandler.class)
     })
     @Select(FILTER_QUERY)
-    public FilterDto getFilterDto();
+    FilterDto getFilterDto();
 }

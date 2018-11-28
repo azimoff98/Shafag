@@ -14,6 +14,17 @@
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <script src="../../js/urls.js" type="text/javascript"></script>
+    <script src="../../js/utility.js" type="text/javascript"></script>
+    <script src="../../js/main.js" type="text/javascript"></script>
+
     <link rel="stylesheet" href="assets/css/gearbox.css">
 </head>
 <body>
@@ -46,7 +57,7 @@
 
 
                 <li>
-                    <a href="index.html"><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
+                    <a href="index.html"><i class="fa fa-desktop "></i>Dashboard <span class="badge"></span></a>
                 </li>
             </ul>
         </div>
@@ -65,64 +76,39 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action ">
-                            Birinci
-                            <span class="pull-right">
-                                 <span class="btn btn-xs btn-default" onclick="alert('Action1 -> Edit'); ">
-                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-                        </span>
-                        <span class="btn btn-xs btn-default" onclick="alert('Action1 -> Play'); ">
-                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                        </span>
-                    </span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">Ikinici
-                            <span class="pull-right">
-                                 <span class="btn btn-xs btn-default" onclick="alert('Action1 -> Edit'); ">
-                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-                        </span>
-                        <span class="btn btn-xs btn-default" onclick="alert('Action1 -> Play'); ">
-                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                        </span>
-                    </span></a>
-                        <a href="#" class="list-group-item list-group-item-action">Üçüncü
-                            <span class="pull-right">
-                                 <span class="btn btn-xs btn-default" onclick="alert('Action1 -> Edit'); ">
-                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-                        </span>
-                        <span class="btn btn-xs btn-default" onclick="alert('Action1 -> Play'); ">
-                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                        </span>
-                    </span></a>
-                        <a href="#" class="list-group-item list-group-item-action">Dördüncü
-                            <span class="pull-right">
-                                 <span class="btn btn-xs btn-default" onclick="alert('Action1 -> Edit'); ">
-                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-                        </span>
-                        <span class="btn btn-xs btn-default" onclick="alert('Action1 -> Play'); ">
-                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                        </span>
-                    </span></a>
-                        <a href="#" class="list-group-item list-group-item-action ">Beşinci
-                            <span class="pull-right">
-                                 <span class="btn btn-xs btn-default" onclick="alert('Action1 -> Edit'); ">
-                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-                        </span>
-                        <span class="btn btn-xs btn-default" onclick="alert('Action1 -> Play'); ">
-                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                        </span>
+                    <div class="list-group" id="brands">
 
-                    </span>
-                        </a>
-
-                        <a href="#" class="list-group-item list-group-item-action active"><p style="margin-left: 40%">
-                            Əlavə ET </p></a>
                     </div>
+
                 </div>
+
 
             </div>
 
+
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">ƏLAVƏ ET</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Zəhmət olmasa əlavə etmək istədiyiniz komponentin adını yazın</p>
+                            <input placeholder="Yazın" id="input4" type="text" class="form-control text-center"
+                                   aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Bağla</button>
+                            <button type="button" onclick="add()" class="btn btn-primary">Əlavə et</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- /. ROW  -->
         </div>
         <!-- /. PAGE INNER  -->

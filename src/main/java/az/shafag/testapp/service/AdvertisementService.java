@@ -77,6 +77,8 @@ public class AdvertisementService extends AbstractService<AdvertisementDTO, Adve
 
     }
 
+
+
     //Only owner of an advertisement can delete by matching key
     public String delete(Long id,String key){
 
