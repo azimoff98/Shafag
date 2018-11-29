@@ -6,17 +6,17 @@ public class ModelDTO {
     private Integer isActive;
     private String label;
     private String name;
-    private Long brandId;
+    private Long brand_id;
 
     public ModelDTO() {
     }
 
-    public ModelDTO(Long id, Integer isActive, String label, String name, Long brandId) {
+    public ModelDTO(Long id, Integer isActive, String label, String name, Long brand_id) {
         this.id = id;
         this.isActive = isActive;
         this.label = label;
         this.name = name;
-        this.brandId = brandId;
+        this.brand_id = brand_id;
     }
 
     public Long getId() {
@@ -51,11 +51,11 @@ public class ModelDTO {
         this.name = name;
     }
 
-    public Long getBrandId() {
-        return brandId;
+    public Long getBrand_id() {
+        return brand_id;
     }
 
-    public void setBrandId(Long brandId) {
-        this.brandId = brandId;
+    public void setBrand_id(Long brand_id) {
+        this.brand_id = brand_id;
     }
 }
