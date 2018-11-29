@@ -1,5 +1,6 @@
 //package az.shafag.testapp;
 //
+//
 //import az.shafag.testapp.dao.mapper.AdvertisementMapper;
 //import az.shafag.testapp.dto.SearchDTO;
 //import az.shafag.testapp.registry.MethodRegistry;
@@ -12,8 +13,6 @@
 //import javax.annotation.PostConstruct;
 //
 //import static az.shafag.testapp.logger.Log.*;
-//
-//
 //
 //@Component
 //public class Main {
@@ -30,17 +29,16 @@
 //    @Autowired
 //    MethodRegistry methodRegistry;
 //
-//    @PostConstruct
+//   @PostConstruct
 //    public void init() throws JsonProcessingException, InterruptedException {
 //        SearchDTO searchDTO = new SearchDTO();
-////        info(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(mapper.getAllByFilter(searchDTO)));
-////        info(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(advertisementService.getAll(searchDTO)));
+//        info(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(mapper.getAllByFilter(searchDTO)));
+//      info(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(advertisementService.getAll(searchDTO)));
 //        info(methodRegistry
 //                .getRegistry()
-//                .get("advertisement")
-//                .get("getAll")
+//               .get("advertisement")
+//               .get("getAll")
 //                .toString());
 //        Thread.sleep(1000000L);
-//
 //    }
 //}
