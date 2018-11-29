@@ -1,5 +1,5 @@
 var urls = new function () {
-    this.getAllAdvertisementsByFilterUrl = 'http://localhost:8080/advertisement/getAll';
+    this.getAllAdvertisementsByFilterUrl = 'http://localhost:8080/ads';
     this.getAllCitiesUrl = 'http://localhost:8080/cities';
     this.getAllBrandsUrl = 'http://localhost:8080/brands';
     this.getAllModelsUrl = 'http://localhost:8080/models';

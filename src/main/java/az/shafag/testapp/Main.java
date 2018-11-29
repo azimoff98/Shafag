@@ -24,7 +24,7 @@
 //    AdvertisementService advertisementService;
 //
 //    @Autowired
-//    ObjectMapper objectMapper;
+//    ObjectMapper objectMapper;a
 //
 //    @Autowired
 //    MethodRegistry methodRegistry;
@@ -37,7 +37,7 @@
 //        info(methodRegistry
 //                .getRegistry()
 //               .get("advertisement")
-//               .get("getAll")
+//               .get("getAll"
 //                .toString());
 //        Thread.sleep(1000000L);
 //    }

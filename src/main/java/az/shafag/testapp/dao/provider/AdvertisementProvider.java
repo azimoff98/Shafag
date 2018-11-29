@@ -7,7 +7,8 @@ import java.util.Objects;
 
 public class AdvertisementProvider {
     public String getAdvertisementsByFilter(SearchDTO searchDTO){
-        return "select ad.* from advertisement ad\n" +
+
+        String s = "select ad.* from advertisement ad\n" +
                 "inner join currency cur on ad.currency_id = cur.id\n" +
                 "inner join cities c on ad.city_id = c.id\n" +
                 "inner join owners o on ad.owner_id = o.id\n" +
@@ -23,6 +24,8 @@ public class AdvertisementProvider {
                 "where ad.is_active=1 and cur.is_active =1 and c.is_active =1 and o.is_active =1 and u.is_active =1 and b.is_active =1 and br.is_active =1\n" +
                 "and col.is_active =1 and d.is_active =1 and f.is_active =1 and g.is_active =1 and m.is_active =1 "
                 .concat(buildCondition(searchDTO));
+        System.out.println(s);
+        return s;
     }
 
     private String buildCondition(SearchDTO searchDTO){
@@ -30,7 +33,7 @@ public class AdvertisementProvider {
         IdDTO temp;
         if (Objects.nonNull(searchDTO)) {
             if ((temp = searchDTO.getApplier()) != null && temp.getId() != null) s.append(" and u.id=#{applier.id}");
-            if ((temp = searchDTO.getBodyType()) != null && temp.getId() != null) s.append(" and b.id=#{body.id}");
+            if ((temp = searchDTO.getBodyType()) != null && temp.getId() != null) s.append(" and b.id=#{bodyType.id}");
             if ((temp = searchDTO.getBrand()) != null && temp.getId() != null) s.append(" and br.id=#{brand.id}");
             if ((temp = searchDTO.getCity()) != null && temp.getId() != null) s.append(" and c.id=#{city.id}");
             if ((temp = searchDTO.getColor()) != null && temp.getId() != null) s.append(" and col.id=#{color.id}");

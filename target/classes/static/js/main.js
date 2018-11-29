@@ -36,10 +36,24 @@ var getCities = function () {
 
 var city_callback = function (d) {
     // console.log(d);
+
+    var e = document.getElementById("allCities");
+    var strUser = e.options[e.selectedIndex].value;
+
+    console.log(strUser);
+
+    var e1 = document.getElementById("allCities");
+    var strUser1 = e1.options[e1.selectedIndex].text;
+
+    console.log(strUser1)
+
+
     var list = d;
     var s = '';
+    var i=1;
     list.forEach(function (city) {
-        s = s.concat('<option class="majors">' + city.name + '</option>');
+        s = s.concat('<option value=" '+ i +'" class="majors">' + city.name + '</option>');
+        i++;
     })
     //s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
     console.log(s);
@@ -56,9 +70,11 @@ var brand_callback = function (d) {
     //console.log(d);
     var list = d;
     var s = '';
+    var i = 1;
     list.forEach(function (brand) {
 
-        s = s.concat('<option class="majors">' + brand.name + '</option>');
+        s = s.concat('<option value=" '+ i +'" class="majors">' + brand.name + '</option>');
+        i++;
     });
     // s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
     //console.log(s);
@@ -74,15 +90,17 @@ var getModels = function () {
 }
 
 var model_callback = function (d) {
-    console.log(d);
+   // console.log(d);
     var list = d;
     var s = '';
+    var i = 1;
     list.forEach(function (model) {
-        s = s.concat('<option class="majors">'  + model.name + '</option>');
+        s = s.concat('<option value=" '+ i +'" class="majors">'  + model.name + '</option>');
+        i++;
     });
     //s = '<div class="dropdown-menu">'.concat(s).concat('</div>');
 
-    console.log(s);
+    //console.log(s);
 
     $('#allModels').append(s);
 }
@@ -99,8 +117,10 @@ var bodyType_callback = function (d) {
    // console.log(d);
     var list = d;
     var s = '';
+    var i = 1;
     list.forEach(function (bodytype) {
-        s = s.concat('<option class="majors">' + bodytype.name + '</option>');
+        s = s.concat('<option value=" '+ i +'" class="majors">' + bodytype.name + '</option>');
+        i++;
     })
     //s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
   //  console.log(s);
@@ -119,8 +139,10 @@ var color_callback = function (d) {
    // console.log(d);
     var list = d;
     var s = '';
+    var i = 1;
     list.forEach(function (color) {
-        s = s.concat('<option class="majors">' + color.name + '</option>');
+        s = s.concat('<option value=" '+ i +'" class="majors">' + color.name + '</option>');
+        i++;
     })
     //s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
    // console.log(s);
@@ -141,8 +163,10 @@ var diferentials_callback = function (d) {
    // console.log(d);
     var list = d;
     var s = '';
+    var i = 1;
     list.forEach(function (diferentials) {
-        s = s.concat('<option class="majors">' + diferentials.name + '</option>');
+        s = s.concat('<option value=" '+ i +'" class="majors">' + diferentials.name + '</option>');
+        i++;
     });
     //s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
    // console.log(s);
@@ -162,8 +186,10 @@ var gearboxes_callback = function (d) {
    // console.log(d);
     var list = d;
     var s = '';
+    var i = 1;
     list.forEach(function (gearboxes) {
-        s = s.concat('<option class="majors">' + gearboxes.name + '</option>');
+        s = s.concat('<option value=" '+ i +'" class="majors">' + gearboxes.name + '</option>');
+        i++;
     });
     //s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
    // console.log(s);
@@ -183,9 +209,11 @@ var fuel_callback = function (d) {
     //console.log(d);
     var list = d;
     var s = '';
+    var i = 0;
     list.forEach(function (fuel) {
 
-        s = s.concat('<option class="majors">' + fuel.name + '</option>');
+        s = s.concat('<option value=" '+ i +'" class="majors">' + fuel.name + '</option>');
+        i++;
     });
     // s = '<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">'.concat(s).concat('</div>');
     //console.log(s);
@@ -686,6 +714,9 @@ function add() {
     })
 }
 
+
+//CAR DETAILE
+//---------------------------------------------
 
 
 

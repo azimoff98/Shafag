@@ -64,7 +64,6 @@ public class AdvertisementService extends AbstractService<AdvertisementDTO, Adve
     @Override
     @ServiceMethod
     public Set<AdvertisementDTO> getAllByFilter(SearchDTO searchDTO) {
-
         return mapper.getAllByFilter(searchDTO);
     }
 
