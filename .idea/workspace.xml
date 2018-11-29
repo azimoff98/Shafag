@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="221ee29f-8d5a-48da-9be5-014948b8ab52" name="Default" comment="services">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/323d385a-2af9-4c4e-af69-85bb6d71009a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/323d385a-2af9-4c4e-af69-85bb6d71009a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/323d385a-2af9-4c4e-af69-85bb6d71009a/storage_v2/_src_/database/step_diploma.7y5hGw/schema/shefeq.4lAmyg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/323d385a-2af9-4c4e-af69-85bb6d71009a/storage_v2/_src_/database/step_diploma.7y5hGw/schema/shefeq.4lAmyg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/ModelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/az/shafag/testapp/dto/ModelDTO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -335,8 +332,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/model/Brand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="791">
+              <caret line="86" column="42" lean-forward="true" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -478,8 +475,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="309" />
-    <option name="y" value="100" />
+    <option name="x" value="525" />
+    <option name="y" value="58" />
     <option name="width" value="1301" />
     <option name="height" value="744" />
   </component>
@@ -516,51 +513,6 @@
               <item name="Shafag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="az" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="az" type="462c0819:PsiDirectoryNode" />
-              <item name="shafag" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="az" type="462c0819:PsiDirectoryNode" />
-              <item name="shafag" type="462c0819:PsiDirectoryNode" />
-              <item name="testapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="az" type="462c0819:PsiDirectoryNode" />
-              <item name="shafag" type="462c0819:PsiDirectoryNode" />
-              <item name="testapp" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shafag" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shafag" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -575,7 +527,7 @@
     <property name="SearchEverywhereHistoryKey" value="ModelC&#9;FILE&#9;file://C:/Users/gurbanaz/IdeaProjects/Shafag/src/main/java/az/shafag/testapp/controller/ModelController.java&#10;VehicleMa&#9;PSI&#9;JAVA://az.shafag.testapp.dao.mapper.VehicleMapper&#10;Advertis&#9;FILE&#9;file://C:/Users/gurbanaz/IdeaProjects/Shafag/src/main/java/az/shafag/testapp/dao/mapper/AdvertisementMapper.java&#10;FilterMa&#9;FILE&#9;file://C:/Users/gurbanaz/IdeaProjects/Shafag/src/main/java/az/shafag/testapp/dao/mapper/FilterMapper.java&#10;Sear&#9;PSI&#9;JAVA://az.shafag.testapp.dto.SearchDTO&#10;Searc&#9;PSI&#9;JAVA://az.shafag.testapp.dto.SearchDTO&#10;Advertisement&#9;FILE&#9;file://C:/Users/gurbanaz/IdeaProjects/Shafag/src/main/java/az/shafag/testapp/controller/AdvertisementController.java&#10;Adv&#9;FILE&#9;file://C:/Users/gurbanaz/IdeaProjects/Shafag/src/main/java/az/shafag/testapp/service/AdvertisementService.java&#10;Filter&#9;FILE&#9;file://C:/Users/gurbanaz/IdeaProjects/Shafag/src/main/java/az/shafag/testapp/dao/mapper/FilterMapper.java&#10;filterD&#9;PSI&#9;JAVA://az.shafag.testapp.dto.FilterDto&#10;Vehic&#9;FILE&#9;file:///home/azimov/Desktop/Shafag3/src/main/java/az/shafag/testapp/model/Vehicle.java&#10;Owner&#9;FILE&#9;file:///home/azimov/Desktop/Shafag3/src/main/java/az/shafag/testapp/model/Owner.java&#10;A&#9;FILE&#9;file:///home/azimov/Desktop/Shafag3/src/main/java/az/shafag/testapp/model/Advertisement.java&#10;Adver&#9;FILE&#9;file:///home/azimov/Desktop/Shafag3/src/main/java/az/shafag/testapp/model/Advertisement.java&#10;Model&#9;FILE&#9;file:///home/azimov/Desktop/Shafag3/src/main/java/az/shafag/testapp/model/Model.java&#10;ModelCon&#9;FILE&#9;file:///home/azimov/Desktop/Shafag3/src/main/java/az/shafag/testapp/controller/ModelController.java&#10;UserSer&#9;FILE&#9;file:///home/azimov/Desktop/Shafag1/src/main/java/az/shafag/testapp/service/UserService.java&#10;AdvertisementSer&#9;FILE&#9;file:///home/azimov/Desktop/Shafag1/src/main/java/az/shafag/testapp/service/AdvertisementService.java&#10;AdvertisementMa&#9;FILE&#9;file:///home/azimov/Desktop/Shafag1/src/main/java/az/shafag/testapp/dao/mapper/AdvertisementMapper.java&#10;advertisem&#9;FILE&#9;file:///home/azimov/Desktop/Shafag1/src/main/java/az/shafag/testapp/controller/AdvertisementController.java&#10;pic&#9;FILE&#9;file:///home/azimov/Desktop/Shafag/src/main/java/az/shafag/testapp/service/PictureService.java&#10;Color&#9;PSI&#9;JAVA://az.shafag.testapp.model.Color&#10;color&#9;FILE&#9;file:///home/azimov/Desktop/Shafag/src/main/java/az/shafag/testapp/controller/ColorController.java&#10;Bod&#9;PSI&#9;JAVA://az.shafag.testapp.model.BodyType&#10;Body&#9;PSI&#9;JAVA://az.shafag.testapp.model.BodyType&#10;vehicle&#9;PSI&#9;JAVA://az.shafag.testapp.model.Vehicle&#10;adverti&#9;PSI&#9;JAVA://az.shafag.testapp.model.Advertisement&#10;data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;vehicled&#9;FILE&#9;file://C:/Users/azim_ns74/IdeaProjects/Shafag/src/main/java/az/shafag/testapp/dto/VehicleDTO.java&#10;database&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;iterable&#9;PSI&#9;JAVA://java.lang.Iterable&#10;model&#9;FILE&#9;das://323d385a-2af9-4c4e-af69-85bb6d71009a/database/step_diploma/schema/shefeq/table/models&#10;da&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;works&#9;FILE&#9;file://C:/Users/azim_ns74/IdeaProjects/shafag_auto/.idea/workspace.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543473985905" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543475282491" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="project.structure.last.edited" value="Project" />
@@ -690,7 +642,7 @@
       <workItem from="1542822166708" duration="3508000" />
       <workItem from="1542826296898" duration="5467000" />
       <workItem from="1543343410321" duration="6953000" />
-      <workItem from="1543383235777" duration="12641000" />
+      <workItem from="1543383235777" duration="13468000" />
     </task>
     <task id="LOCAL-00001" summary="mybatsi configurations">
       <created>1540044541250</created>
@@ -703,12 +655,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175770000" />
+    <option name="totallyTimeSpent" value="176597000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="525" y="58" width="1301" height="744" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2299427" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25866237" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -718,7 +670,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.74024224" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3512786" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42716858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4229543" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -736,7 +688,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.22922637" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.25785658" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Bean Validation" order="8" />
@@ -1054,8 +1006,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/az/shafag/testapp/model/Brand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="791">
+          <caret line="86" column="42" lean-forward="true" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
         </state>
       </provider>
     </entry>
