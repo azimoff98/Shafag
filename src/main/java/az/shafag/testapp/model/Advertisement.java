@@ -20,7 +20,7 @@ public class Advertisement {
     @Column(name = "key")
     private String key;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "vehicle_id")
     private Vehicle vehicle;
 

@@ -2,6 +2,7 @@ package az.shafag.testapp.service;
 
 import az.shafag.testapp.dao.mapper.BrandMapper;
 import az.shafag.testapp.dao.repository.BrandRepository;
+import az.shafag.testapp.dao.repository.VehicleRepository;
 import az.shafag.testapp.dto.BrandDTO;
 import az.shafag.testapp.dto.SearchDTO;
 import az.shafag.testapp.exception.ShafagException;
@@ -18,11 +19,17 @@ import static az.shafag.testapp.constant.ServiceName.*;
 public class BrandService extends AbstractService<BrandDTO, Brand, Long> {
 
 
-    @Autowired
-    private BrandRepository repository;
-    @Autowired
-    private BrandMapper mapper;
+    private final BrandRepository repository;
 
+    private final VehicleRepository vehicleRepository;
+
+    private final BrandMapper mapper;
+
+    public BrandService(BrandRepository repository, VehicleRepository vehicleRepository, BrandMapper mapper) {
+        this.repository = repository;
+        this.vehicleRepository = vehicleRepository;
+        this.mapper = mapper;
+    }
 
     @Override
     public void save(Brand brand) {
@@ -58,6 +65,7 @@ public class BrandService extends AbstractService<BrandDTO, Brand, Long> {
 
     @Override
     public void delete(Long id) {
+
         repository.deleteById(id);
     }
 }

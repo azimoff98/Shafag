@@ -26,7 +26,7 @@ public class Brand {
     @Column(name = "is_active")
     private Integer isActive;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "brand")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "brand", cascade = CascadeType.REMOVE)
     private Set<Model> models;
 
 

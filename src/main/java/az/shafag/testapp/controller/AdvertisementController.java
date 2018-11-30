@@ -50,7 +50,7 @@ public class AdvertisementController {
     }
 
 
-    //ONLY PRIVILIGED SHAFAH USERS CAN DELETE BY ID
+    //ONLY PRIVILIGED SHAFAH USERS CAN Br BY ID
     @DeleteMapping("/{id}")
     public void deleteById(@PathVariable Long id){
         advertisementService.delete(id);

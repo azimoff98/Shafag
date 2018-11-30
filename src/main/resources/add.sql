@@ -1,0 +1,1 @@
+ALTER TABLE shefeq.vehicle ADD COLUMN advertisement_id BIGINT ADD FOREIGN KEY

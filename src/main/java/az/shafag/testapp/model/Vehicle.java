@@ -15,12 +15,17 @@ public class Vehicle {
     @Column(name = "id")
     private Long Id;
 
-    @ManyToOne
+    /*@ManyToOne(cascade = CascadeType.REMOVE)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "brand_id")
-    private Brand brand;
+    private Brand brand;*/
 
-    @ManyToOne
+
+    @OneToOne
+
+    private Advertisement advertisement;
+
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "model_id")
     private Model model;
 
@@ -58,7 +63,7 @@ public class Vehicle {
     @JoinColumn(name = "body_type_id")
     private BodyType bodyType;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     @Fetch(FetchMode.JOIN)
     @JoinTable(
             name = "vehicle_specs",
@@ -71,7 +76,7 @@ public class Vehicle {
     public Vehicle() {
     }
 
-    public Vehicle(Brand brand,
+    public Vehicle(/*Brand brand,*/
                    Model model,
                    Integer year,
                    Integer millage,
@@ -84,7 +89,9 @@ public class Vehicle {
                    Integer engine,
                    BodyType bodyType,
                    Set<Specification> specifications) {
+/*
         this.brand = brand;
+*/
         this.model = model;
         this.year = year;
         this.millage = millage;
@@ -107,13 +114,13 @@ public class Vehicle {
         Id = id;
     }
 
-    public Brand getBrand() {
+/*    public Brand getBrand() {
         return brand;
     }
 
     public void setBrand(Brand brand) {
         this.brand = brand;
-    }
+    }*/
 
     public Model getModel() {
         return model;
@@ -215,7 +222,7 @@ public class Vehicle {
     public String toString() {
         return "Vehicle{" +
                 "Id=" + Id +
-                ", brand=" + brand +
+               /* ", brand=" + brand +*/
                 ", model=" + model +
                 ", year=" + year +
                 ", millage=" + millage +

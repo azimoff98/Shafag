@@ -28,7 +28,6 @@ public class VehicleService extends AbstractService<VehicleDTO,Vehicle,Long>{
     @Override
     public void save(Vehicle vehicle) {
             if(!Objects.isNull(vehicle)
-                    && !Objects.isNull(vehicle.getBrand())
                     && !Objects.isNull(vehicle.getModel())
                     && !Objects.isNull(vehicle.getBodyType())
                     && !Objects.isNull(vehicle.getColor())
